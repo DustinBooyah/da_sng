@@ -7,12 +7,7 @@ https://github.com/philipwalton/solved-by-flexbox
 ...THEN I JUST ADD TO IT AS NEEDED.
 
 WE'LL DO MOBILE STYLING FIRST THEN USE MEDIA QUERIES FOR BIGGER DISPLAYS.
-
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@font-face {
-    font-family: BebasNeue;
-	src: url("font/BebasNeue.otf") format("opentype");
-}
+*/
 
 body {
   font-family:Arial,sans-serif;
@@ -56,7 +51,7 @@ a:hover {
 
 h1,h2,h3,h4,h5,h6 {
 	font-weight:400;
-	font-family:"Bebas Neue";
+	font-family:"bebas_neueregular";
 }
 
 h1 {
