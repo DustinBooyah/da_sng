@@ -3,109 +3,180 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>SnG Commercial Maintenance and Pavement Marking | Gainesville, FL</title>
+  <!-- <title>SnG Commercial Maintenance and Pavement Marking | Gainesville, FL</title> -->
+  <title>Company | Gainesville, FL</title>
   <meta content="SnG Commercial Maintenance and Pavement Marking" name="description">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
   <link rel="icon" href="favicon.png" type="image/x-icon">
-  <link href="css/styles.scss" rel="stylesheet" type="text/css"> 
-   <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css"> 
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'> 
+  <link href="css/styles.scss" rel="stylesheet" type="text/css">
+  <link href="css/nav.scss" rel="stylesheet" type="text/css">
+  <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css"> 
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/menu.js"></script>
   <script src="js/modernizr.custom.42029.js"></script> <!-- LETS ME USE HTML5 AND CSS3 IN OLD BROWSERS --> 
-</head>
+  </head>
 
 <!--  I'M UTILIZING FLEXBOX. http://philipwalton.github.io/solved-by-flexbox/ FOR MO INFO. -->
 
 <body class="site">
-
-  <main class="site-content">
   
-<nav>
- <a href="index.html" class="left"><img src="img/logo-menu.png"></a>
-  <ul class="navigation">
-   
-    <li><a href="about.html">Commercial Maintenance</a>
-    </li>
-    <li><a href="services.html">Pavement Marking</a>
+  <main class="site-content">
+  <div class="container">
+    <nav>
+     <a href="index.html" class="left"><img src="img/logo-menu.png"></a>
 
-    </li>
-  </ul>
+  <div id="menu">
+    <div class="abrir_menu">
+      <span>MENU</span>
+    </div>
+    
+    <div class="menu_aberto">
+      <div id="navigator">
+        <ul class="nav">
+          <li class="title">SnG</li>
+          <li><a href="#" title="" style="border:none;">Home</a></li>
+          <li><a href="#" title="">About Us</a></li>
+          <li>
+            <a href="#container" title="">Commercial Maintenance</a>
+            <ul>
+              <li><a href="#" title="">Property Management</a></li>
+              <li><a href="#" title="">Landscaping</a></li>
+              <li><a href="#" title="">Parking Lot Striping</a></li>
+         <!-- <li><a href="#container" title="">Aliquam Vitae</a>
+                <ul>
+                  <li><a href="#" title="">Lorem Ipsum</a></li>
+                  <li>
+                    <a href="#" title="">Class Aptent</a>
+                    <ul>
+                      <li><a href="#" title="">Lorem Ipsum</a></li>
+                      <li><a href="#" title="">Class Aptent</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" title="">Lorem Ipsum</a></li>
+                  <li><a href="#" title="">Class Aptent</a></li>
+                  <li><a href="#" title="">Sed Interdum Felis</a></li>
+                  <li><a href="#" title="">Etiam Quis Aucto</a></li>
+                </ul>
+              </li> -->
+              <li><a href="#" title="">Power Sweeping</a></li>
+              <li><a href="#" title="">Power Washing</a></li>
+              <li><a href="#" title="">Concrete Work</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#container" title="#" class="parent">Pavement Marking</a>
+            <ul>
+              <li><a href="#" title="">Sealcoating</a></li>
+              <li><a href="#" title="">Thermoplastic</a></li>
+              <li><a href="#" title="">Striping</a></li>
+              <li><a href="#" title="">Athletic Courts</a></li>
+              <li><a href="#" title="">Asphalt Services</a></li>
+              <li><a href="#" title="">Concrete Work</a></li>
+              <li><a href="#" title="">Signs \ Wheel Stops</a></li>
+       <!--        <li>
+                <a href="#" title="">Class Aptent</a>
+                <ul>
+                  <li><a href="#" title="">Lorem Ipsum</a></li>
+                  <li><a href="#" title="">Class Aptent</a></li>
+                </ul>
+              </li> 
+            </ul>
+          </li>-->
+         <!--  <li><a href="#" title="">Media</a></li>
+          <li><a href="#" title="">Downloads</a></li> -->
+          <!-- <li><a href="#" title="">Contact</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </div><!-- End Menu -->
 </nav>
 
-    <header class="text-center">
+    <header>
 
-      <div class="Aligner padding hero">
+      <div class="Aligner padding">
         <div class="Aligner-item Aligner-item--fixed">
-          <p class="white">Lorem ipsum dolor sit amet, consectetur .adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit  anim id est laborum.</p>
-          <button class="cta">Commercial Maintenance</button>
-          <button class="cta">Pavement Marking</button>
+          <button class="cta">Section 1</button>
+          <button class="cta">Section 2</button>
         </div>
       </div>
 
     </header>
 
     <section>
-      <div class="Aligner padding center">
-        <div class="Aligner-item Aligner-item--fixed">
+      <div class="Grid Grid--gutters Grid--flexCells">
+        
+        <div class="Grid-cell">
+          <h3>Form</h3>
 
-         <h3 class="text-center">Contact Us</h3>
+          <form action="">
 
-          <form action="" class="center">
             <ul class="no-bullet">
-
               <li>
                 <input class="namefirst" size="20" type="text" name="firstname" placeholder="First Name">
                 <input class="namelast" size="20" type="text" name="lastname" placeholder="Last Name">
               </li>
-
               <li>
-                <input class="email" size="35" type="email" name="email" placeholder="Email Address">
+                <input class="email" type="email" name="email" placeholder="Email Address">
               </li>
-              
               <li>
                 <input class="phone" type="tel" name="phone" placeholder="Phone">
+              </li>
+              <li>
+                <input class="message" type="text" name="message" placeholder="Message">
               </li> 
-
             </ul>
-          
+
             <div class="text-center">    
               <input type="submit" value="Send" class="button cta">
             </div>
-          </form> 
 
+          </form>
         </div>
+        
+        <div class="Grid-cell">
+          <h1>Header 1</h1>
+          <h2>Header 2</h2>
+          <h3>Header 3</h3>
+          <h4>Header 4</h4>
+          <h5>Header 5</h5>
+          <h6>Header 6</h6>
+          <p class="white">Lorem ipsum dolor sit amet, consectetur .adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit  anim id est laborum.</p>
+        </div>
+
       </div>
     </section>
-
+    
   </main>
 
   <footer>
-<div class="Grid">
-  <div class="Grid-cell padding">
-     <p>
-     <strong class="text-orange">Commercial Maintenance</strong><br>
-     <strong>(352) 378-4490</strong><br>
-  1104 NW 50th Ave, Suite E<br>
-Gainesville, FL 32609
-</p>
-  </div>
-  <div class="Grid-cell padding">
-     <p>
-     <strong class="text-orange">Pavement Marking</strong><br>
-     <strong>(352) 378-2636</strong><br>
-     1104 NW 50th Ave, Suite A<br>
-    Gainesville, FL 32609
-    </p>
-  </div>
-  <div class="Grid-cell Grid--1of2 padding">
-     
-  </div>
+    <div class="Grid Grid--gutters Grid--flexCells">
 
-</div>
+      <div class="small-Grid--1of4 padding">
+        <h6 class="text-orange">Section 1</h6>
+        <p>
+          <strong>(352) 378-4490</strong>
+          <br>
+          1104 NW 50th Ave, Suite E
+          <br>
+          Gainesville, FL 32609
+        </p>
+      </div>
 
+      <div class="small-Grid--1of4 padding">
+        <h6 class="text-orange">Section 2</h6>
+        <p>
+          <strong>(352) 378-2636</strong><br>
+          1104 NW 50th Ave, Suite A<br>
+          Gainesville, FL 32609
+        </p>
+      </div>
+
+    </div>
   
-   <div class="text-center">
- <small><strong>&copy;2015 SnG Pavement Marking</strong></small>
-  </div>
+    <div class="text-center">
+      <strong> Larry Stoppelli</strong> - Founder / Owner<br>
+      <strong>&copy;2015 SnG Pavement Marking</strong>
+    </div>
    
   </footer>
 
