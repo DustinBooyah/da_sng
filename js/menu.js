@@ -1,6 +1,6 @@
 jQuery.noConflict();
 jQuery(document).ready(function($){
-  $('.abrir_menu').click(function(){
+  $('.menu-opened').click(function(){
     $("body").toggleClass('no_scroll');
   });
 });
@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
   });
 
   function initDropDowns(allMenus) {
-    allMenus.children(".abrir_menu").on("click", function() {
+    allMenus.children(".menu-opened").on("click", function() {
       var thisTrigger = jQuery(this),
           thisMenu = thisTrigger.parent(),
           thisPanel = thisTrigger.next();
@@ -26,6 +26,9 @@ jQuery(document).ready(function($){
         allMenus.removeClass("open");	
         thisMenu.addClass("open");
         jQuery(document).on("click", function() {
+          allMenus.removeClass("open");
+        });
+        $("a.title").on("click", function() {
           allMenus.removeClass("open");
         });
         thisPanel.on("click", function(e) {
