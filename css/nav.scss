@@ -1,6 +1,6 @@
 *{ margin:auto; padding: 0; }
 
-@media handheld, screen and (min-width: 64em){
+@media handheld, screen and (min-width: 48em){
   .no_scroll{ 
     overflow-y: hidden; 
   }
@@ -18,12 +18,16 @@
   #navigator .title{ 
     display: none; 
   }
+    #navigator .title-logo {
+    display:visible;
+    float:left;
+  }
   #navigator ul{ 
     list-style: none; 
   }
   #navigator > ul > li{
     min-width: auto;
-    float: right;
+    float:right;
     }
   #navigator > ul > li > a{
     color: #fefefe;
@@ -74,7 +78,7 @@
     background: #555; 
   }
 }
-@media handheld, screen and (max-width: 64em){
+@media handheld, screen and (max-width: 48em){
   .menu-opened{ 
     display: block; 
   }
@@ -147,6 +151,11 @@
     -webkit-box-shadow: -4px 0 5px 0px #373435;
     -moz-box-shadow: -4px 0 5px 0px #373435;
   }
+
+    #navigator .title-logo {
+    display:none;
+  }
+  
   #navigator ul li > ul,
   #navigator ul li li > ul {
     position: relative;
