@@ -17,7 +17,10 @@
   <script src="js/menu.js"></script>
   <script src="js/main.js"></script>
   <script src="js/modernizr.js"></script>
-  <script src="js/modernizr.custom.42029.js"></script> 
+  <script src="js/modernizr.custom.42029.js"></script>
+  <script src="js/add-listener.js"></script> 
+  <script src="js/analytics.js"></script> 
+  <script src="js/link-clicked.js"></script>  
 
   <!-- LETS ME USE HTML5 AND CSS3 IN OLD BROWSERS --> 
 </head>
@@ -36,29 +39,31 @@
               <ul class="nav">
                 <a class="title" href="#" >&#10094; &nbsp;&nbsp;Back</a>
                 <li class="title-logo"><a href="index.html"><img src="img/logo-menu.png"></a></li>
-                <li><a href="#" title="">Contact</a></li>
-                <li><a href="#" title="">About</a></li>
-                <li>
+                <li><a href="contact.html" title="">Contact</a></li>
+                
+               <li>
                   <a href="#container" title="#" class="parent">Commercial Maintenance</a>
                   <ul>
-                    <li><a href="#" title="">Property Management</a></li>
-                    <li><a href="#" title="">Landscaping</a></li>
-                    <li><a href="#" title="">Parking Lot Striping</a></li>
-                    <li><a href="#" title="">Power Sweeping</a></li>
-                    <li><a href="#" title="">Power Washing</a></li>
-                    <li><a href="#" title="">Concrete Work</a></li>
+                    <li><a href="commercial-maintenance/index.html" title="SnG Commercial Maintenance">About</a></li>
+                    <li><a href="commercial-maintenance/property-management.html" title="SnG Commercial Maintenance - Property Management">Property Management</a></li>
+                    <li><a href="commercial-maintenance/landscaping.html" title="SnG Commercial Maintenance - Landscaping">Landscaping</a></li>
+                    <li><a href="commercial-maintenance/parking-lot-striping.html" title="SnG Commercial Maintenance - Parking Lot Striping">Parking Lot Striping</a></li>
+                    <li><a href="commercial-maintenance/power-sweeping.html" title="SnG Commercial Maintenance - Power Sweeping">Power Sweeping</a></li>
+                    <li><a href="commercial-maintenance/power-washing.html" title="SnG Commercial Maintenance - Power Washing">Power Washing</a></li>
+                    <li><a href="commercial-maintenance/concrete-work.html" title="SnG Commercial Maintenance - Concrete Work">Concrete Work</a></li>
                   </ul>
                 </li>
                 <li>
                   <a href="#container" title="#" class="parent">Pavement Marking</a>
                   <ul>
-                    <li><a href="#" title="">Sealcoating</a></li>
-                    <li><a href="#" title="">Thermoplastic</a></li>
-                    <li><a href="#" title="">Striping</a></li>
-                    <li><a href="#" title="">Athletic Courts</a></li>
-                    <li><a href="#" title="">Asphalt Services</a></li>
-                    <li><a href="#" title="">Concrete Work</a></li>
-                    <li><a href="#" title="">Signs \ Wheel Stops</a></li>
+                    <li><a href="pavement-marking/index.html" title="SnG Pavement Marking">About</a></li>
+                    <li><a href="pavement-marking/sealcoating.html" title="SnG Pavement Marking - Sealcoating">Sealcoating</a></li>
+                    <li><a href="pavement-marking/thermoplastic.html" title="SnG Pavement Marking - Thermoplastic">Thermoplastic</a></li>
+                    <li><a href="pavement-marking/striping.html" title="SnG Pavement Marking - Striping">Striping</a></li>
+                    <li><a href="pavement-marking/athletic-courts.html" title="SnG Pavement Marking - Athletic Courts">Athletic Courts</a></li>
+                    <li><a href="pavement-marking/asphalt-services.html" title="SnG Pavement Marking - Asphalt Services">Asphalt Services</a></li>
+                    <li><a href="pavement-marking/concrete-work.html" title="SnG Pavement Marking - Concrete Work">Concrete Work</a></li>
+                    <li><a href="pavement-marking/signs.html" title="SnG Pavement Marking - Signs and Wheel Stops">Signs \ Wheel Stops</a></li>
                   </ul>
                 </li>
               </ul>
@@ -70,8 +75,7 @@
       </nav>
   <header class="Site-header">
     <div class="Header" role="banner">
-    
-   <h1>Contact Us</h1>
+      <h1>Contact Us</h1>
     </div><!-- End Header -->
   </header>
 
@@ -81,6 +85,15 @@
       <div class="Grid Grid--gutters">
         
         <div class="Grid-cell text-center">
+        SnG Pavement Marking serves the following areas:
+
+Gainesville
+Alachua 
+Ocala
+Starke
+Lake City
+Jacksonville
+Palatka
           <h3>Form</h3>
           <form>
             <ul class="no-bullet">
@@ -110,13 +123,14 @@
   </main>
 
 
-  <footer class="Site-footer">
+ <footer class="Site-footer">
 
     <div class="Footer">
-      <div class="Grid Grid--center">
+      <div class="Grid Grid--gutters">
 
         <div class="Grid-cell">
-          <h6 class="text-orange">Commercial Maintenance</h6>
+
+          <h6 class="text-orange"><a class="text-orange" href="commercial-maintenance/index.html" title="SnG Commercial Maintenance">Commercial Maintenance</a></h6>
           <p>
             <strong>(352) 378-4490</strong>
             <br>
@@ -125,31 +139,31 @@
             Gainesville, FL 32609
           </p>
           <ul>
-            <li><a href="#" title="">Property Management</a></li>
-            <li><a href="#" title="">Landscaping</a></li>
-            <li><a href="#" title="">Parking Lot Striping</a></li>
-            <li><a href="#" title="">Power Sweeping</a></li>
-            <li><a href="#" title="">Power Washing</a></li>
-            <li><a href="#" title="">Concrete Work</a></li>
+            <li><a href="commercial-maintenance/property-management.html" title="SnG Commercial Maintenance - Property Management">Property Management</a></li>
+            <li><a href="commercial-maintenance/landscaping.html" title="SnG Commercial Maintenance - Landscaping">Landscaping</a></li>
+            <li><a href="commercial-maintenance/parking-lot-striping.html" title="SnG Commercial Maintenance - Parking Lot Striping">Parking Lot Striping</a></li>
+            <li><a href="commercial-maintenance/power-sweeping.html" title="SnG Commercial Maintenance - Power Sweeping">Power Sweeping</a></li>
+            <li><a href="commercial-maintenance/power-washing.html" title="SnG Commercial Maintenance - Power Washing">Power Washing</a></li>
+            <li><a href="commercial-maintenance/concrete-work.html" title="SnG Commercial Maintenance - Concrete Work">Concrete Work</a></li>
           </ul>
         </div>
 
         <div class="Grid-cell">
-          <h6 class="text-orange">Pavement Marking</h6>
+          <h6 class="text-orange"><a class="text-orange" href="pavement-marking/index.html" title="SnG Pavement Marking">Pavement Marking</a></h6>
           <p>
             <strong>(352) 378-2636</strong><br>
             1104 NW 50th Ave, Suite A<br>
             Gainesville, FL 32609
           </p>
-            <ul>
-              <li><a href="#" title="">Sealcoating</a></li>
-              <li><a href="#" title="">Thermoplastic</a></li>
-              <li><a href="#" title="">Striping</a></li>
-              <li><a href="#" title="">Athletic Courts</a></li>
-              <li><a href="#" title="">Asphalt Services</a></li>
-              <li><a href="#" title="">Concrete Work</a></li>
-              <li><a href="#" title="">Signs \ Wheel Stops</a></li>
-            </ul>
+          <ul>
+            <li><a href="pavement-marking/sealcoating.html" title="SnG Pavement Marking - Sealcoating">Sealcoating</a></li>
+            <li><a href="pavement-marking/thermoplastic.html" title="SnG Pavement Marking - Thermoplastic">Thermoplastic</a></li>
+            <li><a href="pavement-marking/striping.html" title="SnG Pavement Marking - Striping">Striping</a></li>
+            <li><a href="pavement-marking/athletic-courts.html" title="Athletic Courts">Athletic Courts</a></li>
+            <li><a href="pavement-marking/asphalt-services.html" title="SnG Pavement Marking - Asphalt Services">Asphalt Services</a></li>
+            <li><a href="pavement-marking/concrete-work.html" title="SnG Pavement Marking - Concrete Work">Concrete Work</a></li>
+            <li><a href="pavement-marking/signs.html" title="SnG Pavement Marking - Signs and Wheel Stops">Signs \ Wheel Stops</a></li>
+          </ul>
         </div>
 
         <div class="Grid-cell">
