@@ -43,7 +43,7 @@ body {
   max-width:100%;
   margin:0 auto;
   position:relative;
-  color:rgb(68,68,68);
+  color:#333;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -89,7 +89,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight:400;
 	font-family:"bebas_neueregular";
   text-rendering:optimizeLegibility;
-  line-height:1.5;
+  line-height:1;
   text-shadow:1px 1px 1px #222;
   margin:0;
 }
@@ -97,17 +97,17 @@ h1 {
   font-weight: 300;
   font-size: 4em;
   letter-spacing: -.015em;
-  // margin: .25em 0 .75em;
+  margin: .25em 0 .75em;
 }
 
 h2 {
   font-size: 3.5em;
-  // margin: 0 0 calc(1.5em/1.333);
+  margin: 0 0 calc(1.5em/1.333);
 }
 
 h3 {
   font-size: 3em;
-  // margin: 0 0 1.5em;
+  margin: 0 0 1.5em;
 }
 h4 {
   font-size:2.5rem;
@@ -171,7 +171,7 @@ img {
   background: gray(25%);
   color: gray(60%);
   font-size: 0.85em;
-  text-align: center;
+  // text-align: center;
 }
 
 .Footer a {
@@ -660,9 +660,7 @@ img {
   margin:0 auto;
   text-align:center;
 }
-.text-right {
-	text-align:right;
-}
+
 
 /* TEXT COLORS 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -675,6 +673,10 @@ img {
 }
 .text-white_dk {
   color:#ccc;
+}
+.text-offwhite {
+  color:rgba(225,225,225,0.5) !important;
+  text-shadow:none;
 }
 .text-grey_dk {
   color:#666;
@@ -742,6 +744,7 @@ button:hover,
 //     background-position:bottom left;
 //     background-repeat:no-repeat;
 //   }
+
 
 /* FORMS 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -847,6 +850,13 @@ body {
   }
 }
 
+/* IMAGE ROTATION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+img .rotate {
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
 /* MEDIA QUERY -- MEDIUM-LARGE 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media all and (min-width: 48em) {
@@ -859,10 +869,10 @@ body {
     padding:3%;
   }
   h1 {
-    font-size: 4.5em;
-    // margin: .5em 0 1em;
+    font-size: 7.5em;
+    margin: .75em 0 -0.5em;
     letter-spacing:-1pt;
-    // line-height:1;
+    text-align:right;
     }
     button,
 button:visited,
@@ -886,6 +896,17 @@ input[type=submit]:visited {
   transition: all 0.3s;
   margin:1em auto;
 
+}
+main {
+  background:url(../img/bg-content.png) top center no-repeat;
+}
+.text-right {
+  text-align:right;
+}
+footer .border {
+  border-left:solid 1px #555;
+  margin:10px;
+  padding:5px;
 }
 }
 
