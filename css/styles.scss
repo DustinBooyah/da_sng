@@ -44,10 +44,7 @@ body {
   margin:0 auto;
   position:relative;
   color:#333;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
+
 }
 section {
   background:#fff url(../img/bg-section.png) bottom center no-repeat;
@@ -91,23 +88,20 @@ h1,h2,h3,h4,h5,h6 {
   text-rendering:optimizeLegibility;
   line-height:1;
   text-shadow:1px 1px 1px #222;
-  margin:0;
+  margin:0 auto;
 }
 h1 {
   font-weight: 300;
   font-size: 4em;
   letter-spacing: -.015em;
-  margin: .25em 0 .75em;
 }
 
 h2 {
   font-size: 3.5em;
-  margin: 0 0 calc(1.5em/1.333);
 }
 
 h3 {
   font-size: 3em;
-  margin: 0 0 1.5em;
 }
 h4 {
   font-size:2.5rem;
