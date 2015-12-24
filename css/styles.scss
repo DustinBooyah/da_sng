@@ -36,25 +36,29 @@ html {
     font-weight: 300;
   }
 }
-
 body {
   font-family:Arial,sans-serif;
-  font-size: 100%;
+  font-size:85%;
   max-width:100%;
   margin:0 auto;
+  height:auto;
   position:relative;
   color:#333;
-
 }
 section {
   background:#fff url(../img/bg-section.png) bottom center no-repeat;
   background-size:cover;
 }
+img {
+  max-width: 100%;
+  height: auto; }
+
+img {
+  -ms-interpolation-mode: bicubic; }
 p,
 pre {
   margin: 0 0 1.5em;
 }
-
 p {
   font-size:0.75em;
   line-height:1.3;
@@ -87,41 +91,87 @@ h1,h2,h3,h4,h5,h6 {
 	font-family:"bebas_neueregular";
   text-rendering:optimizeLegibility;
   line-height:1;
-  text-shadow:1px 1px 1px #222;
-  margin:0 auto;
+  text-shadow:1px 1px 1px rgba(45,45,45,0.5);
+  margin:0.3rem auto;
 }
 h1 {
   font-weight: 300;
-  font-size: 4em;
+  font-size: 3.5em;
   letter-spacing: -.015em;
+  margin-top:2rem;
+  margin-bottom:-0.75rem;
+  line-height:0.8;
+  color:rgb(255, 217, 161);
+  text-shadow:none;
 }
 
 h2 {
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 h3 {
-  font-size: 3em;
+  font-size:2.5em;
+  line-height:0.9;
 }
 h4 {
-  font-size:2.5rem;
-}
-h5 {
   font-size:2rem;
 }
-h6 {
-  font-size:1.5rem;
+h5 {
+  font-size:1.75rem;
 }
-img { 
-  display: block;
-  max-width: 100%;
-  margin:0;
-  padding:0;
+h6 {
+  font-size:1.25rem;
 }
 
 /* FLEXBOX 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+/**
+ * 1. Avoid the IE 10-11 `min-height` bug.
+ * 2. Set `flex-shrink` to `0` to prevent some browsers from
+ *    letting these items shrink to smaller than their content's default
+ *    minimum size. See http://bit.ly/1Mn35US for details.
+ * 3. Use `%` instead of `vh` since `vh` is buggy in older mobile Safari.
+ */
+
+.Site {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 1, 3 */
+}
+.Site-header,
+.Site-footer {
+  flex: none; /* 2 */
+}
+.Site-header{
+  width:100%;
+}
+.Site-content {
+  flex: 1 0 auto; /* 2 */
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+}
+.Site-content::after {
+  content: '\00a0'; /* &nbsp; */
+  display: block;
+  margin-top: var(--space);
+  height: 0px;
+  visibility: hidden;
+}
+@media (--break-lg) {
+  .Site-content {
+    padding-top: var(--space-lg);
+  }
+  .Site-content::after {
+    margin-top: var(--space-lg);
+  }
+}
+.Site-content--full {
+  padding: 0;
+}
+.Site-content--full::after {
+  content: none;
+}
 .Aligner {
   display: flex;
   align-items: center;
@@ -149,10 +199,8 @@ img {
   max-width: 80%;
   padding:4%;
 }
-
 .Container {
-  max-width: 70em;
-  margin: 0 auto;
+  max-width: 80em;
   height:100%;
   min-height:50vh;
 }
@@ -162,10 +210,10 @@ img {
 }
 .Footer {
   padding: 1.5rem 1.5rem;
-  background: gray(25%);
   color: gray(60%);
   font-size: 0.85em;
-  // text-align: center;
+  background:url(img/logo-footer.png) bottom right no-repeat;
+  max-width:90%;
 }
 
 .Footer a {
@@ -386,259 +434,7 @@ img {
   }
 }
 
-.Image {
-  display: block;
-  width: 40px;
-  height: auto;
-  margin-top: 0.2em;
-}
 
-.Image--tiny {
-  width: 30px;
-}
-
-@media (--break-md) {
-  .Image {
-    width: 70px;
-  }
-  .Image--tiny {
-    width: 40px;
-  }
-}
-.Header {
-  padding: 1.5em;
-  text-align: center;
-}
-@media (--break-lg) {
-  .Header {
-    padding: 3em 1.5em;
-
-  }
-}
-
-.Header-title {
-  margin: 0 0 0.15em;
-  font-size: 1.8em;
-  font-weight: 600;
-  line-height: 1;
-  word-spacing: 0.08em;
-}
-.Header-title i {
-  font-family: serif;
-  font-style: italic;
-  font-weight: 400;
-}
-.Header-title a {
-  border: 0;
-  color: inherit;
-  font-weight: inherit;
-}
-.Header-title a:focus, .Header-title a:hover, .Header-title a:active {
-  text-decoration: none;
-}
-@media (--break-lg) {
-  .Header-title {
-    font-size: 4em;
-  }
-}
-
-.Header-subTitle {
-  margin: 0 0 1.5em;
-  font-size: 0.8em;
-  font-weight: 300;
-  white-space: nowrap;
-}
-@media (--break-lg) {
-  .Header-subTitle {
-    margin: 1em 0 1.75em;
-    font-size: 1.1em;
-  }
-}
-
-.Header-actions {
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
-  font-size: 0.9em;
-}
-@media (--break-sm) {
-  .Header-actions {
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-@media (--break-lg) {
-  .Header-actions {
-    font-size: 1.1em;
-  }
-}
-
-.Header-button:first-child {
-  margin: 0 0 1em;
-}
-@media (--break-sm) {
-  .Header-button:first-child {
-    margin: 0 1em 0 0;
-  }
-}
-
-@media (--break-lg) {
-  .Header--cozy {
-    display: flex;
-    padding: 1.5em;
-    align-items: center;
-  }
-  .Header--cozy .Header-titles {
-    display: flex;
-    align-items: baseline;
-  }
-  .Header--cozy .Header-title {
-    font-size: 1.5em;
-  }
-  .Header--cozy .Header-subTitle {
-    margin: 0 0 0 1em;
-    font-size: 0.8em;
-    font-weight: 300;
-    color: gray;
-  }
-  .Header--cozy .Header-actions {
-    flex: 1;
-    justify-content: flex-end;
-    font-size: 0.9em;
-  }
-}
-.Media {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 1em;
-}
-
-.Media-figure {
-  margin-right: 1em;
-}
-
-.Media-body {
-  flex: 1;
-}
-.Media-body,
-.Media-body :last-child {
-  margin-bottom: 0;
-}
-
-.Media-title {
-  margin: 0 0 .5em;
-}
-
-.Media--center {
-  align-items: center;
-}
-
-.Media--reverse > .Media-figure {
-  order: 1;
-  margin: 0 0 0 1em;
-}
-
-.Section {
-  padding: 0 var(--space);
-}
-.Section:nth-child(2n) {
-  background-color: hsla(31, 15%, 50%, 0.1);
-  overflow: hidden; /* Contain margins. */
-}
-.Section::before,
-.Section::after {
-  content: '\00a0'; /* &nbsp; */
-  display: block;
-  height: 0px;
-  visibility: hidden;
-}
-.Section::before {
-  margin-bottom: var(--space);
-}
-.Section::after {
-  margin-top: var(--space);
-}
-@media (--break-lg) {
-  .Section {
-    padding: 0 var(--space-lg);
-  }
-  .Section::before {
-    margin-bottom: var(--space-lg);
-  }
-  .Section::after {
-    margin-top: var(--space-lg);
-  }
-}
-
-.Section-heading {
-  text-align: center;
-}
-
-@media (--break-lg) {
-  .Section-list {
-    padding: 0;
-    text-align: center;
-    list-style-position: inside;
-  }
-}
-/**
- * 1. Avoid the IE 10-11 `min-height` bug.
- * 2. Set `flex-shrink` to `0` to prevent some browsers from
- *    letting these items shrink to smaller than their content's default
- *    minimum size. See http://bit.ly/1Mn35US for details.
- * 3. Use `%` instead of `vh` since `vh` is buggy in older mobile Safari.
- */
-
-.Site {
-  display: flex;
-  flex-direction: column;
-  height: 100%; /* 1, 3 */
-}
-
-.Site-header,
-.Site-footer {
-  flex: none; /* 2 */
-}
- .Site-header{
-  width:100%;
-}
-
-.Site-content {
-  flex: 1 0 auto; /* 2 */
-  padding: var(--space) var(--space) 0;
-  width: 100%;
-}
-.Site-content::after {
-  content: '\00a0'; /* &nbsp; */
-  display: block;
-  margin-top: var(--space);
-  height: 0px;
-  visibility: hidden;
-}
-@media (--break-lg) {
-  .Site-content {
-    padding-top: var(--space-lg);
-  }
-  .Site-content::after {
-    margin-top: var(--space-lg);
-  }
-}
-
-.Site-content--full {
-  padding: 0;
-}
-.Site-content--full::after {
-  content: none;
-}
-.commercial-maintenance {
-    background:url(../img/header-commercial-maintenance.png) top center no-repeat;
-    background-size:cover;
-  }
-  .pavement-marking {
-    background:url(../img/header-pavement-marking.png) top center no-repeat;
-    background-size:cover;
-  }
 /* POSITIONING CLASSES 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .right {
@@ -669,7 +465,7 @@ img {
   color:#ccc;
 }
 .text-offwhite {
-  color:rgba(225,225,225,0.5) !important;
+  color:rgba(225,225,225,0.5);
   text-shadow:none;
 }
 .text-grey_dk {
@@ -729,16 +525,6 @@ button:hover,
 .button:hover{
   background-color:rgb(255,204,51);
 }
-
-// button.cta ,
-// .button .cta,
-// input[type=submit].cta,
-// input[type=button].cta {
-//     background-image: url(../img/cta-bg.png);
-//     background-position:bottom left;
-//     background-repeat:no-repeat;
-//   }
-
 
 /* FORMS 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -830,32 +616,61 @@ input.message:focus {
   padding-left: 54px;
   width:auto;
 }
-
+.commercial-maintenance {
+    background:url(../img/header-commercial-maintenance.png) top center no-repeat;
+    background-size:cover;
+  }
+.pavement-marking {
+    background:url(../img/header-pavement-marking.png) top center no-repeat;
+    background-size:cover;
+  }
 .home {
   background:url(../img/bg-home.png) top center no-repeat;
   background-size:cover;
-}
-@media (min-width: 0em and max-width:48em) {
-body {
-	  font-size:80%;
-	}
-  .hidden-for-small li{
+  }
+@media handheld, screen and (max-width:48em) {
+  .hidden-for-small {
     display:none;
   }
+
+  /* IMAGE ROTATION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.rotate-one {
+    border:#fff 8px solid;
+    box-shadow:1px 1px 5px #4e4e4e;
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+    max-width:100%;
+}
+// .rotate-two { 
+//     border:#fff 8px solid;
+//     box-shadow:1px 1px 5px #4e4e4e;
+//     -webkit-transform: rotate(-2deg);
+//     -moz-transform: rotate(-2deg);
+//     transform: rotate(-2deg);
+//     max-width:50%;
+//     display:inline-block;
+// }
+// .rotate-three { 
+//     border:#fff 8px solid;
+//     box-shadow:1px 1px 5px #4e4e4e;
+//     -webkit-transform: rotate(1deg);
+//     -moz-transform: rotate(1deg);
+//     transform: rotate(1deg);
+//     max-width:50%;
+//     display:inline-block;
+// }
 }
 
-/* IMAGE ROTATION
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-img .rotate {
-    -webkit-transform: rotate(-4deg);
-    -moz-transform: rotate(-4deg);
-    transform: rotate(-4deg);
-}
 /* MEDIA QUERY -- MEDIUM-LARGE 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media all and (min-width: 48em) {
   body {
     font-size:100%;
+  }
+  .hidden-for-large {
+    display:none;
   }
   .Aligner-item--fixed {
     flex: none;
@@ -863,12 +678,13 @@ img .rotate {
     padding:3%;
   }
   h1 {
-    font-size: 7.5em;
-    margin: .75em 0 -0.5em;
+    font-size: 6em;
+    color:rgb(255, 217, 161);
+    margin-bottom: -0.3em;
     letter-spacing:-1pt;
-    text-align:right;
+    text-shadow:none;
     }
-    button,
+button,
 button:visited,
 .button,
 .button:visited,
@@ -889,7 +705,41 @@ input[type=submit]:visited {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   margin:1em auto;
-
+}
+.rotate-one {
+    border:#fff 8px solid;
+    box-shadow:1px 1px 5px #4e4e4e;
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+    display:block;
+    margin:0 auto;
+    flex: 1 1 100%;
+    min-width: 0; 
+     max-width:60%;
+}
+.rotate-two { 
+    border:#fff 8px solid;
+    box-shadow:1px 1px 5px #4e4e4e;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    margin-top:-5rem;
+     flex: 1 1 100%;
+    min-width: 0; 
+    max-width:50%;
+}
+.rotate-three { 
+    border:#fff 8px solid;
+    box-shadow:1px 1px 5px #4e4e4e;
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+    margin-top:-3rem;
+    margin-left:-1rem;
+     flex: 1 1 100%;
+    min-width: 0; 
+    max-width:50%;
 }
 main {
   background:url(../img/bg-content.png) top center no-repeat;

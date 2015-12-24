@@ -1,4 +1,4 @@
-*{ margin:auto; padding: 0; }
+*{ margin:0 auto; padding: 0; }
 
 @media handheld, screen and (min-width: 48em){
   .no-scroll{ 
@@ -8,19 +8,19 @@
     display: none; 
     }
   #menu{
-    height: 50px;
+    min-height: 50px;
     margin: 0 auto;
     }
   #navigator{
-    height: 50px;
+    min-height: 50px;
     line-height: 50px;
     }
   #navigator .title{ 
     display: none; 
   }
     #navigator .title-logo {
-    display:visible;
     float:left;
+    line-height: 1;
   }
   #navigator ul{ 
     list-style: none; 
