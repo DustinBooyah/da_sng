@@ -65,7 +65,7 @@ p {
   margin-bottom:1.25em;
 }
 footer{
-  background-image:url(../img/bg.jpg);
+  background-image:url(../img/bg-footer.jpg);
   font-size:80%;
   color:#888;
   width:100%;
@@ -212,7 +212,6 @@ h6 {
   padding: 1.5rem 1.5rem;
   color: gray(60%);
   font-size: 0.85em;
-  background:url(img/logo-footer.png) bottom right no-repeat;
   max-width:90%;
 }
 
@@ -687,6 +686,9 @@ input.message:focus {
     header h1 {
 margin-bottom:0.25rem;
     } 
+    h2 {
+      font-size: 4em;
+    }
 button,
 button:visited,
 .button,
