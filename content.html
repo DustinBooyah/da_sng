@@ -11,20 +11,23 @@
   <meta name="MobileOptimized" content="320">
   <link href="css/styles.scss" rel="stylesheet" type="text/css">
   <link href="css/nav.scss" rel="stylesheet" type="text/css">
-  <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
+  <link href="css/fonts.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="favicon.png" type="image/x-icon"> 
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/main.js"></script>
   <script src="js/modernizr.js"></script>
-  <script src="js/modernizr.custom.42029.js"></script> 
+  <script src="js/modernizr.custom.42029.js"></script>
+  <script src="js/add-listener.js"></script> 
+  <script src="js/analytics.js"></script> 
+  <script src="js/link-clicked.js"></script> 
 
   <!-- LETS ME USE HTML5 AND CSS3 IN OLD BROWSERS --> 
 </head>
 
 <!--  I'M UTILIZING FLEXBOX. http://philipwalton.github.io/solved-by-flexbox/ FOR MO INFO. -->
 <body class="Site">
-   <nav>
+    <nav>
         <div id="menu">
           <div class="menu-opened">
             <span>MENU</span>
@@ -33,31 +36,33 @@
           <div class="menu-open">
             <div id="navigator">
 
-              <ul class="nav">
+               <ul class="nav">
                 <a class="title" href="#" >&#10094; &nbsp;&nbsp;Back</a>
-                <li class="title-logo"><a href="index.html"><img src="img/logo-menu.png"></a></li>
-                <li><a href="#" title="">About Us</a></li>
-                <li>
+               <li class="title-logo"><a href="../index.html"><img src="../img/logo-menu.png"></a></li>
+                 <li><a href="../contact.html" title="">Contact</a></li>
+                 <li>
                   <a href="#container" title="#" class="parent">Commercial Maintenance</a>
                   <ul>
-                    <li><a href="commercial_maintenance/property_management.html" title="">Property Management</a></li>
-                    <li><a href="commercial_maintenance/landscaping.html" title="">Landscaping</a></li>
-                    <li><a href="commercial_maintenance/parking_lot_striping.html" title="">Parking Lot Striping</a></li>
-                    <li><a href="commercial_maintenance/power_sweeping.html" title="">Power Sweeping</a></li>
-                    <li><a href="commercial_maintenance/power_washing.html" title="">Power Washing</a></li>
-                    <li><a href="commercial_maintenance/concrete_work.html" title="">Concrete Work</a></li>
+                    <li><a href="index.html" title="SnG Commercial Maintenance">About</a></li>
+                    <li><a href="property-management.html" title="SnG Commercial Maintenance - Property Management">Property Management</a></li>
+                    <li><a href="landscaping.html" title="SnG Commercial Maintenance - Landscaping">Landscaping</a></li>
+                    <li><a href="parking-lot-striping.html" title="SnG Commercial Maintenance - Parking Lot Striping">Parking Lot Striping</a></li>
+                    <li><a href="power-sweeping.html" title="SnG Commercial Maintenance - Power Sweeping">Power Sweeping</a></li>
+                    <li><a href="power-washing.html" title="SnG Commercial Maintenance - Power Washing">Power Washing</a></li>
+                    <li><a href="concrete-work.html" title="SnG Commercial Maintenance - Concrete Work">Concrete Work</a></li>
                   </ul>
                 </li>
                 <li>
                   <a href="#container" title="#" class="parent">Pavement Marking</a>
                   <ul>
-                    <li><a href="pavement_marking/sealcoating.html" title="">Sealcoating</a></li>
-                    <li><a href="pavement_marking/thermoplastic.html" title="">Thermoplastic</a></li>
-                    <li><a href="pavement_marking/striping.html" title="">Striping</a></li>
-                    <li><a href="pavement_marking/athletic_courts.html" title="">Athletic Courts</a></li>
-                    <li><a href="pavement_marking/asphalt_services.html" title="">Asphalt Services</a></li>
-                    <li><a href="pavement_marking/concrete_work.html" title="">Concrete Work</a></li>
-                    <li><a href="pavement_marking/signs.html" title="">Signs \ Wheel Stops</a></li>
+                    <li><a href="../pavement-marking/index.html" title="SnG Pavement Marking">About</a></li>
+                    <li><a href="../pavement-marking/sealcoating.html" title="SnG Pavement Marking - Sealcoating">Sealcoating</a></li>
+                    <li><a href="../pavement-marking/thermoplastic.html" title="SnG Pavement Marking - Thermoplastic">Thermoplastic</a></li>
+                    <li><a href="../pavement-marking/striping.html" title="SnG Pavement Marking - Striping">Striping</a></li>
+                    <li><a href="../pavement-marking/athletic-courts.html" title="SnG Pavement Marking - Athletic Courts">Athletic Courts</a></li>
+                    <li><a href="../pavement-marking/asphalt-services.html" title="SnG Pavement Marking - Asphalt Services">Asphalt Services</a></li>
+                    <li><a href="../pavement-marking/concrete-work.html" title="SnG Pavement Marking - Concrete Work">Concrete Work</a></li>
+                    <li><a href="../pavement-marking/signs.html" title="SnG Pavement Marking - Signs and Wheel Stops">Signs \ Wheel Stops</a></li>
                   </ul>
                 </li>
               </ul>
@@ -67,79 +72,92 @@
 
         </div><!-- End Menu -->
       </nav>
-  <header class="Site-header">
+
+ <main class="Site-content">
+  <div class="Container">
+
     <div class="Header" role="banner">
-     <h1>Sealcoating</h1>
+      <h1></h1>
+      <h3></h3>
+      <p></p>
     </div><!-- End Header -->
-  </header>
-
-  <main class="Site-content">
-    <div class="Container">
-     
-      <div class="Grid Grid--gutters">
-
-      <div class="Grid-cell">
-      <h2>Sealcoating</h2>
-        <p class="white">As soon as a new asphalt surface is installed, it very slowly begins to lose the essential oils and hydrocarbon binders that hold the aggregate together. Over a period of years it can lead to brittle asphalt, a loss of color, cracking and other asphalt problems. Adding to the loss of oils and flexibility is the degrading effect from the sun’s UV rays, gas/oil drips, heavy vehicles and weathering. In order to help your asphalt retain the oils and binders that hold it together and resist new damage, it is very important to seal the asphalt with a high-quality, commercial sealcoating product.
-<br><br>
-An unsealed crack allows water to run down under the pavement.  With this constant flow of water the aggregates under the asphalt surface are eroded away.  This results in alligator areas, pot holes and other cracks because the top asphalt is no longer properly supported and cracks when vehicles roll over.  We use Hot or Cold application crack filler to stop the intrusion of water and other destructive elements.
-<br><br>
-A quality sealer will prvide a "skin" of protection and can be applied 30-60 days after new asphalt is installed (or anytime thereafter). This simple periodic maintenance can double the life of your pavement and keep the destructive elements blocked out. It will also provide a slate black finish for your asphalt that will give your home or business that “new-look” appearance. Sealcoating is a perfect low-cost procedure that can save you a significant amount of money in the long run. SnG Pavement Marking in Gainesville, FL will be happy to assist you in determining the application method for any project you bring our way. Sealcoat your asphalt today!</p>
-      </div>
-
-      <div class="Grid-cell">
-        <p class="white">Lorem ipsum dolor sit amet, consectetur .adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit  anim id est laborum.</p>
-      </div>
-
-      </div>
+   
+    <div class="hidden-for-large">
+      <img class="rotate-one" src="../img/thermoplastic-1.jpg">
     </div>
+
+    <div class="Grid Grid--guttersXl">
+
+      <div class="Grid-cell "></div>
+
+      <div class="Grid-cell hidden-for-small">
+     
+        <img class="rotate-one" src="../img/thermoplastic-1.jpg"> 
+        <img class="rotate-three" src="../img/thermoplastic-1.jpg"> 
+        <img class="rotate-two" src="../img/thermoplastic-1.jpg">
+  
+      </div>
+
+    </div><!-- End Grid -->
+  </div><!--End Container -->
   </main>
-    
- <footer class="Site-footer">
+
+
+  <footer class="Site-footer">
 
     <div class="Footer">
-      <div class="Grid Grid--center">
-
+      <div class="Grid Grid--guttersLg">
         <div class="Grid-cell">
-          <h6 class="text-orange">Commercial Maintenance</h6>
-          <p>
-            <strong>(352) 378-4490</strong>
-            <br>
-            1104 NW 50th Ave, Suite E
-            <br>
-            Gainesville, FL 32609
-          </p>
-          <ul>
-            <li><a href="#" title="">Property Management</a></li>
-            <li><a href="#" title="">Landscaping</a></li>
-            <li><a href="#" title="">Parking Lot Striping</a></li>
-            <li><a href="#" title="">Power Sweeping</a></li>
-            <li><a href="#" title="">Power Washing</a></li>
-            <li><a href="#" title="">Concrete Work</a></li>
-          </ul>
+          <div class="Grid Grid--gutters">
+            <div class="Grid-cell">
+              <h6 class="text-orange text-right"><a class="text-orange" href="index.html">Commercial Maintenance</a></h6>
+              <p class="text-right">
+                <strong>(352) 378-4490</strong>
+                <br>
+                1104 NW 50th Ave, Suite E
+                <br>
+                Gainesville, FL 32609
+              </p>
+            </div>
+
+            <div class="Grid-cell border">
+              <ul>
+                <li><a href="property-management.html" title="SnG Commercial Maintenance - Property Management">Property Management</a></li>
+                <li><a href="landscaping.html" title="SnG Commercial Maintenance - Landscaping">Landscaping</a></li>
+                <li><a href="parking-lot-striping.html" title="SnG Commercial Maintenance - Parking Lot Striping">Parking Lot Striping</a></li>
+                <li><a href="power-sweeping.html" title="SnG Commercial Maintenance - Power Sweeping">Power Sweeping</a></li>
+                <li><a href="power-washing.html" title="SnG Commercial Maintenance - Power Washing">Power Washing</a></li>
+                <li><a href="concrete-work.html" title="SnG Commercial Maintenance - Concrete Work">Concrete Work</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-
+   
         <div class="Grid-cell">
-          <h6 class="text-orange">Pavement Marking</h6>
-          <p>
-            <strong>(352) 378-2636</strong><br>
-            1104 NW 50th Ave, Suite A<br>
-            Gainesville, FL 32609
-          </p>
-            <ul>
-              <li><a href="#" title="">Sealcoating</a></li>
-              <li><a href="#" title="">Thermoplastic</a></li>
-              <li><a href="#" title="">Striping</a></li>
-              <li><a href="#" title="">Athletic Courts</a></li>
-              <li><a href="#" title="">Asphalt Services</a></li>
-              <li><a href="#" title="">Concrete Work</a></li>
-              <li><a href="#" title="">Signs \ Wheel Stops</a></li>
-            </ul>
+          <div class="Grid Grid--gutters">
+            <div class="Grid-cell text-right">
+              <h6 class="text-orange"><a class="text-orange" href="../pavement-marking/index.html">Pavement Marking</a></h6>
+              <p>
+                <strong>(352) 378-2636</strong><br>
+                1104 NW 50th Ave, Suite A<br>
+                Gainesville, FL 32609
+              </p>
+            </div>
+            <div class="Grid-cell border">
+              <ul>
+                <li><a href="../pavement-marking/sealcoating.html" title="SnG Pavement Marking - Sealcoating">Sealcoating</a></li>
+                <li><a href="../pavement-marking/thermoplastic.html" title="SnG Pavement Marking - Thermoplastic">Thermoplastic</a></li>
+                <li><a href="../pavement-marking/striping.html" title="SnG Pavement Marking - Striping">Striping</a></li>
+                <li><a href="../pavement-marking/athletic-courts.html" title="SnG Pavement Marking - Athletic Courts">Athletic Courts</a></li>
+                <li><a href="../pavement-marking/asphalt-services.html" title="SnG Pavement Marking - Asphalt Services">Asphalt Services</a></li>
+                <li><a href="../pavement-marking/concrete-work.html" title="SnG Pavement Marking - Concrete Work">Concrete Work</a></li>
+                <li><a href="../pavement-marking/signs.html" title="SnG Pavement Marking - Signs and Wheel Stops">Signs \ Wheel Stops</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-
         <div class="Grid-cell">
-          <strong> Larry Stoppelli</strong> - Founder / Owner<br>
-          <strong>&copy;2015 SnG Pavement Marking</strong>
+          <strong> Larry Stoppelli</strong> - Founder / Owner<br><strong>&copy;2015 SnG Pavement Marking</strong>
         </div>
 
       </div><!-- End Grid -->
