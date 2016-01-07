@@ -17,14 +17,14 @@
   <script src="js/menu.js"></script>
   <script src="js/main.js"></script>
   <script src="js/modernizr.js"></script>
-  <script src="js/modernizr.custom.42029.js"></script>
+  <script src="js/modernizr.custom.42029.js"></script> 
 
   <!-- LETS ME USE HTML5 AND CSS3 IN OLD BROWSERS --> 
 </head>
 
 <!--  I'M UTILIZING FLEXBOX. http://philipwalton.github.io/solved-by-flexbox/ FOR MO INFO. -->
-<body class="Site home">
-   <nav>
+<body class="Site">
+    <nav>
         <div id="menu">
           <div class="menu-opened">
             <span>MENU</span>
@@ -33,12 +33,11 @@
           <div class="menu-open">
             <div id="navigator">
 
-              <ul class="nav">
-                <a class="title text-orange" href="#" >&#10094; &nbsp;&nbsp;Back</a>
-                <li class="title-logo"><a href="index.html"><img src="img/logo-menu.png"></a></li>
-                <li><a href="contact.html" title="">Contact</a></li>
-                
-                <li>
+               <ul class="nav">
+                <a class="title" href="#" >&#10094; &nbsp;&nbsp;Back</a>
+               <li class="title-logo"><a href="index.html"><img src="img/logo-menu.png"></a></li>
+                 <li><a href="contact.html" title="">Contact</a></li>
+                 <li>
                   <a href="#container" title="#" class="parent">Commercial Maintenance</a>
                   <ul>
                     <li><a href="commercial-maintenance.html" title="SnG Commercial Maintenance">About</a></li>
@@ -70,41 +69,48 @@
 
         </div><!-- End Menu -->
       </nav>
-  <header class="Site-header">
-    <div class="Header" role="banner">
-    
-      <div class="Aligner">
-        <div class="Aligner-item Aligner-item--fixed">
-          <div class="Grid Grid--gutters">
-        
-       
-        
-        <div class="Grid-cell">
-          <h1 class="text-white">Commercial Maintenance<small><br>
-         (352) 378-4490</small></h1>
-          <h1 class="text-white">Pavement Marking<small><br>
-         (352) 378-4490</small></h1>
-        </div>
-
-      <div class="Grid-cell">
-        <img src="img/Logohome.svg">
-          <button>Pavement Marking</button><br>
-          <button>Commercial Maintenance</button>
-        </div>
-        </div>
-      </div><!-- End Aligner -->
-      
+    <header class="Site-header commercial-maintenance">
+    <div class="Header text-center" role="banner">
+      <h1>Commercial Maintenance</h1>
     </div><!-- End Header -->
   </header>
+<main class="Site-content">
+  <div class="Container">
 
-<!-- 
-  <main class="Site-content">
-    <div class="Container">
-    
+    <div class="hidden-for-large">
+      <img class="rotate-one" src="img/thermoplastic-1.jpg">
     </div>
-  </main> -->
 
-  <footer class="Site-footer">
+    <div class="Grid Grid--guttersXl">
+
+      <div class="Grid-cell "> <p> SnG Commercial Maintenance specializes in services geared toward keeping your shopping center, office complex, or home in presentable condition. We're a well established company that has been serving all of Florida and southern Georgia for over 30 years strong. SnG Commercial Maintenance will see to it that your facility looks sharp and leaves a lasting impression!</p>
+
+       <h5>Click on your desired service for more information about what we do.</h5>
+ <p>
+          <ul>
+            <li><a href="property-management.html" title="SnG Commercial Maintenance - Property Management">Property Management</a></li>
+            <li><a href="landscaping.html" title="SnG Commercial Maintenance - Landscaping">Landscaping</a></li>
+            <li><a href="parking-lot-striping.html" title="SnG Commercial Maintenance - Parking Lot Striping">Parking Lot Striping</a></li>
+            <li><a href="power-sweeping.html" title="SnG Commercial Maintenance - Power Sweeping">Power Sweeping</a></li>
+            <li><a href="power-washing.html" title="SnG Commercial Maintenance - Power Washing">Power Washing</a></li>
+            <li><a href="concrete-work.html" title="SnG Commercial Maintenance - Concrete Work">Concrete Work</a></li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="Grid-cell hidden-for-small">
+     
+        <img class="rotate-one" src="img/commercial-maintenance-main.jpg"> 
+        <img class="rotate-three" src="img/commercial-maintenance-main2.jpg"> 
+        <img class="rotate-two" src="img/commercial-maintenance-main3.jpg">
+  
+      </div>
+
+    </div><!-- End Grid -->
+  </div><!--End Container -->
+  </main>
+    
+<footer class="Site-footer">
     <div class="Footer">
       <div class="Grid Grid--guttersLg">
         <div class="Grid-cell">
@@ -164,5 +170,6 @@
     </div><!-- End Footer -->
     
   </footer>
+
 </body>
 </html>
