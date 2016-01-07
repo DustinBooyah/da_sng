@@ -4,7 +4,7 @@ MY NAME IS DUSTIN AGUILAR AND THIS IS MY PERSONAL FLEXBOX STYLESHEET.
 
 I USE ELEMENTS FROM HERE: https://github.com/philipwalton/solved-by-flexbox
 
-THEN, I JUST ADD MY OWN STUFF.
+THEN I JUST ADD MY OWN STUFF.
 
 WE'LL DO MOBILE STYLING FIRST THEN USE MEDIA QUERIES FOR BIGGER DISPLAYS.
 
@@ -65,7 +65,7 @@ p {
   margin-bottom:1.25em;
 }
 footer{
-  background-image:url(../img/bg-footer.jpg);
+  background-image:url(../img/bg-footer.png);
   font-size:80%;
   color:#888;
   width:100%;
@@ -328,7 +328,7 @@ h6 {
   }
   .med-Grid--1of4 > .Grid-cell {
     flex: 0 0 25%;
-  }
+  } 
 }
 
 @media (--break-lg) {
@@ -558,7 +558,7 @@ input[type=email],
 input[type=tel] {
   display:inline-block;
   font-family:inherit;
-  font-size: 95%;
+  font-size: 100%;
   line-height: 1.5;
   color:#3c3c3c;
   border-radius: 0;
@@ -575,11 +575,11 @@ input[type=tel] {
   }
 }
 
-/* THESE ARE FOR THE ICONS IN THE INPUT FIELDS
+/* THESE ARE FOR THE ICONS IN THE INPUT FIELDS.
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input.namefirst,
 input.namefirst:focus{
-  background: url(../img/name.svg);
+  background: url(../img/form-icon-name.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat;
@@ -593,7 +593,7 @@ input.namelast:focus{
 
 input.email,
 input.email:focus {
-  background: url(../img/email.svg);
+  background: url(../img/form-icon-email.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat;
@@ -601,7 +601,7 @@ input.email:focus {
 }
 input.phone,
 input.phone:focus {
-  background: url(../img/phone.svg);
+  background: url(../img/form-icon-phone.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat;
@@ -609,13 +609,15 @@ input.phone:focus {
 }
 input.message,
 input.message:focus {
-  background: url(../img/message.svg);
+  background: url(../img/form-icon-message.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat;
   padding-left: 54px;
   width:auto;
 }
+
+
 .commercial-maintenance {
     background:url(../img/header-commercial-maintenance.png) top center no-repeat;
     background-size:cover;
