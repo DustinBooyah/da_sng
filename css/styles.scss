@@ -225,7 +225,14 @@ h6 {
 
 .Footer {
   padding: 1.5rem 0 0;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
+}
+
+.footer ul, 
+.footer li {
+  list-style-type:none;
+  font-size:0.75rem;
+  font-weight:bold;
 }
 
 .Footer a:focus,
@@ -498,7 +505,7 @@ nav {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul, li {
   list-style-type:none;
-  font-size:0.75rem;
+  font-size:0.8rem;
   font-weight:bold;
 }
 
@@ -680,7 +687,7 @@ input.message:focus {
 }
 h2 {
   font-size: 3.5rem;
-  margin:-2rem auto 0.5rem;
+  margin:-1.75rem auto 0.5rem;
 }
 h3 {
   font-size:2.5rem;
@@ -716,6 +723,7 @@ input[type=submit]:visited {
   transition: all 0.3s;
   margin:1em auto;
 }
+
 .rotate-one {
     border:#fff 8px solid;
     box-shadow:1px 1px 5px #4e4e4e;
@@ -726,7 +734,7 @@ input[type=submit]:visited {
     margin:0 auto;
     flex: 1 1 100%;
     min-width: 0; 
-     max-width:60%;
+     max-width:80%;
 }
 .rotate-two { 
     border:#fff 8px solid;
@@ -763,6 +771,7 @@ input[type=submit]:visited {
 }
 main {
   background:url(../img/bg-content.png) top center no-repeat;
+   background-size:contain;
 }
 .text-right {
   text-align:right;
