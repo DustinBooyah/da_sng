@@ -36,6 +36,7 @@
     text-rendering:optimizeLegibility;    
     text-align: center;
     display: block;
+    font-weight:300;
     background: #333;
     padding-left: 15px;
     padding-right:15px;
@@ -68,6 +69,7 @@
     color: #fefefe;
     font-size: 1.25rem;
     font-family:"bebas_neueregular";
+    font-weight:300;
     text-rendering:optimizeLegibility;
     display: block;
     padding: 12px 17px;
@@ -85,6 +87,7 @@
   .menu-opened span{
     color: #fefefe;
     font-size: 1.25rem;
+
     font-family:"bebas_neueregular";
     text-rendering:optimizeLegibility;
     text-align: center;
@@ -127,16 +130,17 @@
     background: #555;
     transition: 0.3s;
     font-family:"bebas_neueregular";
-    font-size:1.25rem;
+    font-size:1.25rem    font-weight:300;
     box-shadow: -4px 0 15px 0px #373435;
     -webkit-box-shadow: -4px 0 15px 0px #373435;
     -moz-box-shadow: -4px 0 15px 0px #373435;
   }
   .open > .menu-open{ 
     left: 0; 
-  }  
+}
   #navigator .title{
     font-size: 1.25rem;
+    font-weight:300;
     font-family:"bebas_neueregular";
     text-rendering:optimizeLegibility;
     text-shadow: 0.8px 0.8px 3px #111;
@@ -172,15 +176,16 @@
     display: block; 
   }    
   #navigator ul li a{
-    color: #999;
+    color: #ddd;
     font-size: 1.5rem;
+    font-weight:300;
     display: block;
     padding: 20px;
     border-top: 1px solid rgba(255,255,255,0.045) !important;
     border-bottom: 1px solid rgba(0,0,0,0.045) !important;
   }
   #navigator > ul > li:hover > a{ 
-    color: #aaa; 
+    color: #eee; 
     background: #444; 
   }
   #navigator > ul > li > .parent,
@@ -192,26 +197,28 @@
     background-repeat: no-repeat; 
     background-position: 260px center; 
   }
-  #navigator > ul > li > .parent,
-  #navigator > ul > li:hover > .parent{ 
-    color: #aaa; 
+  #navigator > ul > li > .parent{ 
+    color: #ddd; 
     background-color: inherit; 
   }  
+  #navigator > ul > li:hover > .parent {
+    background-color:#444;
+  }
   #navigator > ul > li.hover > .parent{ 
-    color: #aaa; 
+    color: #ddd; 
     background-color: #444; 
   } 
   #navigator ul li li a{ 
-    color: #aaa; 
+    color: #ddd; 
     font-size: 1.15rem; 
   }
   #navigator ul li li > .parent,
   #navigator ul li li:hover > .parent{ 
-    color: #aaa; 
+    color: #ddd; 
     background-color: inherit; 
   } 
   #navigator ul li li.hover > .parent{ 
-    color: #aaa; 
+    color: #ddd; 
     background-color: rgba(0,0,0,0.1);
   }
   .nav ul{ 
