@@ -9,8 +9,8 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
-  <link href="css/styles.scss" rel="stylesheet" type="text/css">
-  <link href="css/nav.scss" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/nav.css" rel="stylesheet" type="text/css">
   <link href="css/fonts.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="favicon.png" type="image/x-icon"> 
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -25,72 +25,80 @@
 <!--  I'M UTILIZING FLEXBOX. http://philipwalton.github.io/solved-by-flexbox/ FOR MO INFO. -->
 <body class="Site home">
    <nav>
-    <div id="menu">
-      <div class="menu-opened">
-        <span>MENU</span>
-      </div>
-       
-      <div class="menu-open">
-        <div id="navigator">
+        <div id="menu">
+          <div class="menu-opened">
+            <span>MENU</span>
+          </div>
+           
+          <div class="menu-open">
+            <div id="navigator">
 
-          <ul class="nav">
-            <a class="title text-orange" href="#" >&#10094; &nbsp;&nbsp;Back</a>
-            <li class="title-logo"><a href="index.html"><img src="img/logo-menu.png"></a></li>
-            <li><a href="contact.html" title="">Contact</a></li>
-            
-            <li>
-              <a href="#container" title="#" class="parent">Commercial Maintenance</a>
-              <ul>
-                <li><a href="commercial-maintenance.html" title="SnG Commercial Maintenance">About</a></li>
-                <li><a href="commercial-maintenance-property-management.html" title="SnG Commercial Maintenance - Property Management">Property Management</a></li>
-                <li><a href="commercial-maintenance-landscaping.html" title="SnG Commercial Maintenance - Landscaping">Landscaping</a></li>
-                <li><a href="commercial-maintenance-parking-lot-striping.html" title="SnG Commercial Maintenance - Parking Lot Striping">Parking Lot Striping</a></li>
-                <li><a href="commercial-maintenance-power-sweeping.html" title="SnG Commercial Maintenance - Power Sweeping">Power Sweeping</a></li>
-                <li><a href="commercial-maintenance-power-washing.html" title="SnG Commercial Maintenance - Power Washing">Power Washing</a></li>
-                <li><a href="commercial-maintenance-concrete-work.html" title="SnG Commercial Maintenance - Concrete Work">Concrete Work</a></li>
+               <ul class="nav">
+                <a class="title text-orange" href="#" >&#10094; &nbsp;&nbsp;Back</a>
+               <li class="title-logo"><a href="index.html"><img src="img/logo-menu.png"></a></li>
+                 <li><a href="contact.html" title="SnG Pavement Marking - Contact Us">Contact</a></li>
+                 <li>
+                  <a href="#container" title="#" class="parent">Commercial Maintenance</a>
+                  <ul>
+                    <li><a href="commercial-maintenance.html" title="SnG Commercial Maintenance">About</a></li>
+                    <li><a href="commercial-maintenance-property-management.html" title="SnG Commercial Maintenance - Property Management">Property Management</a></li>
+                    <li><a href="commercial-maintenance-landscaping.html" title="SnG Commercial Maintenance - Landscaping">Landscaping</a></li>
+                    <li><a href="commercial-maintenance-parking-lot-striping.html" title="SnG Commercial Maintenance - Parking Lot Striping">Parking Lot Striping</a></li>
+                    <li><a href="commercial-maintenance-power-sweeping.html" title="SnG Commercial Maintenance - Power Sweeping">Power Sweeping</a></li>
+                    <li><a href="commercial-maintenance-power-washing.html" title="SnG Commercial Maintenance - Power Washing">Power Washing</a></li>
+                    <li><a href="commercial-maintenance-concrete-work.html" title="SnG Commercial Maintenance - Concrete Work">Concrete Work</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#container" title="#" class="parent">Pavement Marking</a>
+                  <ul>
+                    <li><a href="pavement-marking.html" title="SnG Pavement Marking">About</a></li>
+                    <li><a href="pavement-marking-sealcoating.html" title="SnG Pavement Marking - Sealcoating">Sealcoating</a></li>
+                    <li><a href="pavement-marking-thermoplastic.html" title="SnG Pavement Marking - Thermoplastic">Thermoplastic</a></li>
+                    <li><a href="pavement-marking-striping.html" title="SnG Pavement Marking - Striping">Striping</a></li>
+                    <li><a href="pavement-marking-athletic-courts.html" title="SnG Pavement Marking - Athletic Courts">Athletic Courts</a></li>
+                    <li><a href="pavement-marking-asphalt-services.html" title="SnG Pavement Marking - Asphalt Services">Asphalt Services</a></li>
+                    <li><a href="pavement-marking-concrete-work.html" title="SnG Pavement Marking - Concrete Work">Concrete Work</a></li>
+                    <li><a href="pavement-marking-signs.html" title="SnG Pavement Marking - Signs and Wheel Stops">Signs \ Wheel Stops</a></li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-            <li>
-              <a href="#container" title="#" class="parent">Pavement Marking</a>
-              <ul>
-                <li><a href="pavement-marking.html" title="SnG Pavement Marking">About</a></li>
-                <li><a href="pavement-marking-sealcoating.html" title="SnG Pavement Marking - Sealcoating">Sealcoating</a></li>
-                <li><a href="pavement-marking-thermoplastic.html" title="SnG Pavement Marking - Thermoplastic">Thermoplastic</a></li>
-                <li><a href="pavement-marking-striping.html" title="SnG Pavement Marking - Striping">Striping</a></li>
-                <li><a href="pavement-marking-athletic-courts.html" title="SnG Pavement Marking - Athletic Courts">Athletic Courts</a></li>
-                <li><a href="pavement-marking-asphalt-services.html" title="SnG Pavement Marking - Asphalt Services">Asphalt Services</a></li>
-                <li><a href="pavement-marking-concrete-work.html" title="SnG Pavement Marking - Concrete Work">Concrete Work</a></li>
-                <li><a href="pavement-marking-signs.html" title="SnG Pavement Marking - Signs and Wheel Stops">Signs \ Wheel Stops</a></li>
-              </ul>
-            </li>
-          </ul>
 
-        </div>
-      </div>
+            </div>
+          </div>
 
-    </div><!-- End Menu -->
-  </nav>
+        </div><!-- End Menu -->
+      </nav>
 
-  <section>
+  <div class="Container">
+
+    <div class="center">
+       <img src="img/logo-hero.png" alt="SnG Pavement Marking and Commercial Maintenance">
+    </div>
+
     <div class="Aligner center">
-
       <div class="Aligner-item Aligner-item--fixed">
+      <a href="pavement-marking.html">
         <button>
           <h2>Pavement<br> Marking</h2><hr>
           <h3>(352) 378-4490</h3>
         </button>
+        </a>
       </div>
 
       <div class="Aligner-item Aligner-item--fixed">
+         <a href="commercial-maintenance.html">
         <button>
           <h2>Commercial<br> Maintenance</h2><hr>
           <h3>(352) 378-4490</h3>
         </button>
+        </a>
       </div>
 
     </div><!-- End Aligner -->
-  </section>
-  
+  </div>
+
+
   <footer class="Site-footer">
     <div class="Footer">
       <div class="Grid Grid--guttersLg">
