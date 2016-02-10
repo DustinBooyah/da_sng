@@ -15,11 +15,11 @@ WE'LL DO MOBILE STYLING FIRST THEN USE MEDIA QUERIES FOR BIGGER DISPLAYS.
 
 @custom-media --high-dppx (-webkit-min-device-pixel-ratio: 1.5),
     (min-resolution: 144dpi), (min-resolution: 1.5dppx);
-:root {
-  --space: 1.5rem;
-  --space-lg: 2rem;
-  --bg-color: hsl(150, 45%, 50%);
-}
+// :root {
+//   --space: 1.5rem;
+//   --space-lg: 2rem;
+//   --bg-color: hsl(150, 45%, 50%);
+// }
 
 *,
 *::after,
@@ -39,20 +39,25 @@ html {
 body {
   font-family:Arial,sans-serif;
   max-width:100%;
-  // line-height:1.4;
-  margin:0 auto;
   height:auto;
   position:relative;
   color:#333;
 }
 section {
-height:75vh;
+min-height:75%;
+margin-bottom:0;
+
 }
 img {
   max-width: 100%;
   height: auto; 
+  margin-top: 10px;
+  margin-bottom:15px;
 }
 img {
+
+  display: inline-block;
+  vertical-align: middle; 
   -ms-interpolation-mode: bicubic; 
 }
 p,
@@ -60,11 +65,11 @@ pre {
   margin: 0 0 1.5rem;
 }
 p {
-  line-height:1.3;
   font-size:0.75rem;
+    text-rendering:optimizeLegibility;
 }
 footer{
-  background-image:url(../img/bg-footer.png);
+  background-image:url(../img/bg-footer.jpg);
   color:#888;
   width:100%;
 }
@@ -82,7 +87,7 @@ a:hover {
   color:#F68B3C;
 }
 h1{
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom:-0.75rem;
   font-weight:400;
   line-height:1;
@@ -91,7 +96,7 @@ h1{
   text-rendering:optimizeLegibility;
 }
 h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight:400;
   line-height:1;
   margin:auto;
@@ -100,7 +105,7 @@ h2 {
   text-shadow:1px 1px 1px rgba(45,45,45,0.5);
 }
 h3 {
-  font-size:1.25rem;
+  font-size:1.75rem;
   font-weight:400;
   color:#444;
   line-height:1;
@@ -110,7 +115,7 @@ h3 {
   
 }
 h4 {
-  font-size:1rem;
+  font-size:1.5rem;
   font-weight:400;
   color:#444;
   line-height:1;
@@ -120,7 +125,7 @@ h4 {
   
 }
 h5 {
-  font-size:0.75rem;
+  font-size:1.25rem;
   font-weight:400;
   color:#444;
   line-height:1;
@@ -130,7 +135,7 @@ h5 {
   
 }
 h6 {
-  font-size:0.75rem;
+  font-size:1rem;
   font-weight:400;
   color:#444;
   line-height:1;
@@ -165,23 +170,23 @@ h6 {
 }
 .Site-content {
   flex: 1 0 auto; /* 2 */
-  margin-top:3rem;
-  padding: var(--space) var(--space) 0;
+  // margin-top:3rem;
+  padding: 1.5rem;
   width: 100%;
 }
 .Site-content::after {
   content: '\00a0'; /* &nbsp; */
   display: block;
-  margin-top: var(--space);
+  margin-top: 1.5rem;
   height: 0px;
   visibility: hidden;
 }
 @media (--break-lg) {
   .Site-content {
-    padding-top: var(--space-lg);
+    padding-top: 2rem;
   }
   .Site-content::after {
-    margin-top: var(--space-lg);
+    margin-top: 2rem;
   }
 }
 .Site-content--full {
@@ -502,6 +507,7 @@ nav {
   width:100%;
 }
 
+
 /* LISTS 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul, li {
@@ -521,8 +527,7 @@ button:visited,
 .button:visited,
 input[type=submit],
 input[type=submit]:visited {
-  min-width:4rem;
-  min-width: 75%;
+  min-width: 50%;
   max-height: 100%;
   cursor:pointer;
   border:none;
@@ -530,12 +535,13 @@ input[type=submit]:visited {
   font-family:"bebas_neueregular";
   font-size:1.4rem;
   padding:1rem 2rem;
-  text-align:center; 
+  text-align:center;
+  box-shadow:#999 2px 2px 3px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  margin:2rem auto;
+  margin:0.5rem auto;
 }
 
 button:hover,
@@ -590,7 +596,7 @@ input[type=tel] {
   margin:3px auto;
   max-width:100%;
 }
-  input:focus{
+input:focus{
   background: #fff;
   box-shadow: 0;
   border: 1px solid #3498db;
@@ -649,11 +655,9 @@ input.message:focus {
     background-size:cover;
   }
 .home {
-  background:url(../img/bg-home-2.jpg) top center no-repeat;
+  background:url(../img/bg-home.png) bottom center no-repeat;
   background-size:cover;
-  }
-  .container .home {
-    padding:5%;
+
   }
 @media handheld, screen and (max-width:48em) {
   .hidden-for-small {
@@ -678,7 +682,7 @@ input.message:focus {
   body {
     font-size:100%;
   }
-  .hidden-for-large {
+nav  > ul > li > a .hidden-for-large {
     display:none;
   }
   .Aligner-item--fixed {
@@ -688,6 +692,7 @@ input.message:focus {
   }
   .Site-content {
     margin-top:0;
+    padding:3%
   }
 
   h1{
@@ -722,6 +727,8 @@ input[type=submit]:visited {
   font-size:2.25rem;
   padding:1rem;
   min-width:300px;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 .rotate-one {
@@ -781,5 +788,8 @@ footer .border {
   margin:10px;
   padding:5px;
 }
+  .hidden-for-large {
+    display:none;
+  }
 }
 
