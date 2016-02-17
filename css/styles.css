@@ -15,11 +15,6 @@ WE'LL DO MOBILE STYLING FIRST THEN USE MEDIA QUERIES FOR BIGGER DISPLAYS.
 
 @custom-media --high-dppx (-webkit-min-device-pixel-ratio: 1.5),
     (min-resolution: 144dpi), (min-resolution: 1.5dppx);
-// :root {
-//   --space: 1.5rem;
-//   --space-lg: 2rem;
-//   --bg-color: hsl(150, 45%, 50%);
-// }
 
 *,
 *::after,
@@ -46,16 +41,14 @@ body {
 section {
 min-height:75%;
 margin-bottom:0;
-
 }
 img {
   max-width: 100%;
   height: auto; 
-  margin-top: 10px;
+  margin-top:10px;
   margin-bottom:15px;
 }
 img {
-
   display: inline-block;
   vertical-align: middle; 
   -ms-interpolation-mode: bicubic; 
@@ -132,7 +125,6 @@ h5 {
   margin:0.5rem auto;
   font-family:"bebas_neueregular";
   text-rendering:optimizeLegibility;
-  
 }
 h6 {
   font-size:1rem;
@@ -142,7 +134,6 @@ h6 {
   margin:0.5rem auto;
   font-family:"bebas_neueregular";
   text-rendering:optimizeLegibility;
-  
 }
 
 /* FLEXBOX 
@@ -164,13 +155,14 @@ h6 {
 .Site-header,
 .Site-footer {
   flex: none; /* 2 */
+  flex-shrink:0;
 }
 .Site-header{
   width:100%;
 }
 .Site-content {
   flex: 1 0 auto; /* 2 */
-  // margin-top:3rem;
+  margin-top:3rem;
   padding: 1.5rem;
   width: 100%;
 }
@@ -224,7 +216,6 @@ h6 {
 }
 .Container {
   max-width: 80rem;
-  // padding:5%;
   height:100%;
   min-height:50vh;
 }
@@ -246,7 +237,6 @@ h6 {
   color: #fff;
   text-decoration: underline;
 }
-
 .Grid {
   display: flex;
   flex-wrap: wrap;
@@ -254,7 +244,6 @@ h6 {
   margin: 0;
   padding: 0;
 }
-
 .Grid-cell {
   flex: 1;
 }
@@ -505,6 +494,7 @@ nav {
   background: #333;
   border-bottom:solid 2px #DE7324;
   width:100%;
+  display:block;
 }
 
 
@@ -655,7 +645,7 @@ input.message:focus {
     background-size:cover;
   }
 .home {
-  background:url(../img/bg-home.png) bottom center no-repeat;
+  background:url(../img/bg-home.jpg) bottom center no-repeat;
   background-size:cover;
 
   }
