@@ -7,7 +7,6 @@
   .no-scroll{ 
     overflow-y: hidden; 
   }
-  
   #menu{
     min-height: 52px;
     }
@@ -15,68 +14,60 @@
     min-height: 52px;
     line-height: 52px;
     }
- 
   #navigator ul{ 
     list-style: none; 
     display:block;
-  }
+    }
   #navigator > ul > li{
-    min-width: auto;
+    position:relative;
+    z-index:10;
     }
   #navigator > ul > li > a{
     color: #fefefe;
     font-size: 1.25rem;
     font-family:"bebas_neueregular";
-    text-rendering:optimizeLegibility;    
     text-align: center;
     display: block;
     font-weight:300;
     background: #333;
-    padding-left:15px;
-    padding-right:15px;
+    padding:0 15px;
     }
   #navigator > ul > li:hover > a{
     background: #444;
     }
   #navigator ul li > ul,
   #navigator ul li li > ul{ 
-    display: none; 
+    display: none;
   }
   #navigator ul li:hover > ul,
   #navigator ul li li:hover > ul{
     position: absolute;
     display: block;
     background: #444;
-    box-shadow: 0 7px 6px -7px #373435;
-    -webkit-box-shadow: 0 7px 6px -7px #373435;
-    -moz-box-shadow: 0 7px 6px -7px #373435;
     }
   #menu ul ul li ul{
     top: 0;
     left: 179px;
     min-height: 100%;
-    border-left: 1px solid #444;
+    border-left: 1px solid #222;
   }
   #menu ul ul li a{
     color: #fefefe;
     font-size: 1.25rem;
     font-family:"bebas_neueregular";
     font-weight:300;
-    height:52px;
-    text-rendering:optimizeLegibility;
     display: block;
     padding: 0 15px;
-    border-top: 1px solid rgba(255,255,255,0.045);
-    border-bottom: 1px solid rgba(0,0,0,0.045);
+    border-top: 1px solid rgb(75,75,75);
+    border-bottom: 1px solid rgb(50,50,50);
     }
   #menu ul ul li:hover > a{ 
     background: #555; 
-  }
 
+  }
   .menu-opened{ 
     display: none; 
-    }
-
+  }
   .title{ 
     display: none; 
   }
@@ -99,7 +90,6 @@
     color: #fefefe;
     font-size: 1.25rem;
     font-family:"bebas_neueregular";
-    text-rendering:optimizeLegibility;
     text-align: left;
     position: absolute;
     z-index: 99;
@@ -151,16 +141,15 @@
     font-size: 1.25rem;
     font-weight:300;
     font-family:"bebas_neueregular";
-    text-rendering:optimizeLegibility;
     text-shadow: 0.8px 0.8px 3px #111;
     height: 52px;
     line-height:52px;
     display: block;
     border-bottom: 1px solid rgba(0,0,0,0.045);
     background: #333 url(../img/logo-mobilemenu.png) no-repeat center;
-    box-shadow: -4px 0 5px 0px #373435;
+/*    box-shadow: -4px 0 5px 0px #373435;
     -webkit-box-shadow: -4px 0 5px 0px #373435;
-    -moz-box-shadow: -4px 0 5px 0px #373435;
+    -moz-box-shadow: -4px 0 5px 0px #373435;*/
   }
 
   #navigator .title-logo {
@@ -170,7 +159,7 @@
   #navigator ul li > ul,
   #navigator ul li li > ul {
     position: relative;
-    width: 100%;
+    min-width: 100%;
     height: 100%;
     top: 0;
     left: 0;
@@ -231,7 +220,7 @@
   }
   .nav ul{ 
     display: none; 
-    left: -9999px; 
+    left: -999px; 
   }
   .nav li.hover > ul,
   .nav li li.hover > ul {
