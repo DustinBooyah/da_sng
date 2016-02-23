@@ -67,7 +67,8 @@ footer{
   width:100%;
 }
 small {
-	font-size:65%;
+	font-size:70%;
+  text-color:#666;
 }
 a { 
   text-decoration: none; 
@@ -135,7 +136,10 @@ h6 {
   font-family:"bebas_neueregular";
   text-rendering:optimizeLegibility;
 }
-
+hr {
+  color:#ccc;
+  margin: 1.5rem auto;
+}
 /* FLEXBOX 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -172,6 +176,7 @@ h6 {
   height: 0px;
   visibility: hidden;
 }
+
 @media (--break-lg) {
   .Site-content {
     padding-top: 2rem;
@@ -180,6 +185,7 @@ h6 {
     margin-top: 2rem;
   }
 }
+
 .Site-content--full {
   padding: 0;
 }
@@ -550,101 +556,111 @@ button:hover,
 button h2 {
   margin-top:auto;
 }
-.cta {
-margin-left:1rem;
-margin-right:1rem;
+
+.cta-bg-cm {
+   background:rgb(243,172,5) url(../img/bg-cta-cm.png) top center no-repeat;
+    background-size:cover;
+    margin:1rem;
+    padding-top:2rem;
+}
+.cta-bg-pm {
+   background:rgb(243,172,5) url(../img/bg-cta-pm.png) top center no-repeat;
+    background-size:cover;
+    margin:1rem;
+    padding-top:2rem;
 }
 .padding {
   padding:4%;
   }
+  .inline {
+  display:inline-block;
+}
+
 /* FORMS 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 form {
   position:relative;
+  font-size:0.8rem;
 }
 
+*:focus {
+  outline: none;
+}
 label {
-  font-size:100%;
   display:block;
+  margin:0.5rem auto 0.25rem;
+  font-weight:bold;
 }
-
-::-webkit-input-placeholder {
-   color: #888;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: #888;  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #888;  
-}
-
-:-ms-input-placeholder {  
-   color: #888;  
-}
-
 input[type=text], 
 input[type=email], 
-input[type=tel] {
+input[type=tel],
+textarea.message {
   display:inline-block;
   font-family:inherit;
   font-size: 100%;
-  line-height: 1.5;
+  line-height: 1.25;
   color:#3c3c3c;
-  border-radius: 0;
-  border:1px solid rgba(225,225,225,0);
-  border-bottom: 1px solid rgba(0,0,0,.20);
-  padding: 10px;
-  margin:3px auto;
-  max-width:100%;
+  border: 1px solid #666;
+  padding:5px;
+  margin:0.25rem auto;
 }
-input:focus{
-  background: #fff;
-  box-shadow: 0;
-  border: 1px solid #3498db;
+input:focus,
+textarea:focus,
+input:focus:invalid, /* when a field is considered invalid by the browser */
+textarea:focus:invalid{
+  border: 1px solid #db8c34;
   }
 
-input.namefirst,
-input.namefirst:focus{
-  background: url(../img/form-icon-name.svg);
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat;
-  padding-left: 54px;
+/*
+ { 
+    border: 1px solid #b03535
+}*/
+
+
+input:required:valid,
+textarea:required:valid { /* when a field is considered valid by the browser */
+    border: 1px solid #5cd053;
 }
-input.namelast,
-input.namelast:focus{
-  padding-left: 54px;
+      
+/*input.first_name,
+input.first_name:focus{
+  background:#fff url(../img/form-icon-name.svg);
+  background-size: 30px 30px;
+  background-position: 1px 6px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+input.last_name,
+input.last_name:focus{
+  padding-left: 0;
   background:none;
 }
-
 input.email,
 input.email:focus {
-  background: url(../img/form-icon-email.svg);
+  background:#fff url(../img/form-icon-email.svg);
   background-size: 30px 30px;
-  background-position: 11px 8px;
+  background-position: 1px 6px;
   background-repeat: no-repeat;
-  padding-left: 54px;
+  padding-left: 50px;
 }
-input.phone,
-input.phone:focus {
-  background: url(../img/form-icon-phone.svg);
+input.telephone,
+input.telephone:focus {
+  background:#fff url(../img/form-icon-phone.svg);
   background-size: 30px 30px;
-  background-position: 11px 8px;
+  background-position: 1px 6px;
   background-repeat: no-repeat;
-  padding-left: 54px;
-}
-input.message,
-input.message:focus {
-  background: url(../img/form-icon-message.svg);
+  padding-left: 50px;
+}*/
+textarea.message,
+textarea.message:focus {
+ /* background:#fff url(../img/form-icon-message.svg);
   background-size: 30px 30px;
-  background-position: 11px 8px;
+  background-position: 1px 6px;
   background-repeat: no-repeat;
-  padding-left: 54px;
-  width:auto;
+  padding-left: 50px;*/
+  width:100%;
+  height:35%;
   }
-  
 
 .commercial-maintenance {
     background:url(../img/header-commercial-maintenance.png) top center no-repeat;
@@ -724,8 +740,7 @@ input.message:focus {
   input[type=submit]:visited {
     color:white;
     font-size:2.25rem;
-    text-shadow:1px 1px 1px rgba(45,45,45,0.75);
-    padding:1rem;
+    text-shadow:1px 1px 1px rgba(45,45,45,0.9);
     min-width:300px;
   }
 
@@ -771,7 +786,8 @@ input.message:focus {
     min-width: 0; 
     max-width:50%;
   }
-  main {
+  main,
+  .main {
     background:url(../img/bg-content.png) top center no-repeat;
     background-size:contain;
   }
