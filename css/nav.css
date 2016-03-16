@@ -24,16 +24,16 @@
     }
   #navigator > ul > li > a{
     color: #fefefe;
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     font-family:"bebas_neueregular";
     text-align: center;
     display: block;
     font-weight:300;
-    background: #333;
+    background: #26221D;
     padding:0 15px;
     }
   #navigator > ul > li:hover > a{
-    background: #444;
+    background: #353027;
     }
   #navigator ul li > ul,
   #navigator ul li li > ul{ 
@@ -43,7 +43,7 @@
   #navigator ul li li:hover > ul{
     position: absolute;
     display: block;
-    background: #444;
+    background: #353027;
     }
   #menu ul ul li ul{
     top: 0;
@@ -53,16 +53,16 @@
   }
   #menu ul ul li a{
     color: #fefefe;
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     font-family:"bebas_neueregular";
     font-weight:300;
     display: block;
     padding: 0 15px;
-    border-top: 1px solid rgb(75,75,75);
-    border-bottom: 1px solid rgb(50,50,50);
+    border-top: 1px solid rgb(65, 58, 51);
+    border-bottom: 1px solid rgb(42, 37, 29);
     }
   #menu ul ul li:hover > a{ 
-    background: #555; 
+    background: #453C32; 
 
   }
   .menu-opened{ 
@@ -88,7 +88,7 @@
   }
   .menu-opened span{
     color: #fefefe;
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     font-family:"bebas_neueregular";
     text-align: left;
     position: absolute;
@@ -99,7 +99,7 @@
     margin: 0 auto;
     display: block;
     cursor: pointer;
-     background: #333 url(../img/logo-mobilemenu2.png) no-repeat center;
+    background: #26221D url(../img/logo-mobilemenu2.png) no-repeat center;
     box-shadow: 0 7px 3px -7px #373435;
     -webkit-box-shadow: 0 7px 3px -7px #373435;
     -moz-box-shadow: 0 7px 3px -7px #373435;
@@ -125,10 +125,10 @@
     height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
-    background: #555;
+    background: #453C32;
     transition: 0.3s;
     font-family:"bebas_neueregular";
-    font-size:1.25rem;
+    font-size:1.45rem;
     font-weight:300;
     box-shadow: -4px 0 15px 0px #373435;
     -webkit-box-shadow: -4px 0 15px 0px #373435;
@@ -138,7 +138,7 @@
     left: 0; 
 }
   #navigator .title{
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     font-weight:300;
     font-family:"bebas_neueregular";
     text-shadow: 0.8px 0.8px 3px #111;
@@ -146,7 +146,7 @@
     line-height:52px;
     display: block;
     border-bottom: 1px solid rgba(0,0,0,0.045);
-    background: #333 url(../img/logo-mobilemenu.png) no-repeat center;
+    background: #26221D url(../img/logo-mobilemenu.png) no-repeat center;
 /*    box-shadow: -4px 0 5px 0px #373435;
     -webkit-box-shadow: -4px 0 5px 0px #373435;
     -moz-box-shadow: -4px 0 5px 0px #373435;*/
@@ -174,7 +174,7 @@
   }    
   #navigator ul li a{
     color: #ddd;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     font-weight:300;
     display: block;
     padding: 20px;
@@ -183,7 +183,7 @@
   }
   #navigator > ul > li:hover > a{ 
     color: #eee; 
-    background: #444; 
+    background: #353027; 
   }
   #navigator > ul > li > .parent,
   #navigator > ul > li:hover > .parent,
@@ -199,11 +199,11 @@
     background-color: inherit; 
   }  
   #navigator > ul > li:hover > .parent {
-    background-color:#444;
+    background-color:#353027;
   }
   #navigator > ul > li.hover > .parent{ 
     color: #ddd; 
-    background-color: #444; 
+    background-color: #353027; 
   } 
   #navigator ul li li a{ 
     color: #ddd; 
