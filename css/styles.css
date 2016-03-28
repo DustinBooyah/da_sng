@@ -688,7 +688,7 @@ textarea.message:focus {
   .hidden-for-small {
     display:none;
   }
-  .rotate-one {
+  .pic-sngl-ltlt-top {
     border:#fff 8px solid;
     box-shadow:1px 1px 5px #4e4e4e;
     -webkit-transform: rotate(-1deg);
@@ -750,7 +750,7 @@ textarea.message:focus {
     min-width:300px;
   }
 
-  .rotate-one {
+  .pic-sngl-ltlt-top {
     border:#fff 8px solid;
     box-shadow:1px 1px 5px #4e4e4e;
     -webkit-transform: rotate(-1deg);
@@ -758,20 +758,27 @@ textarea.message:focus {
     transform: rotate(-1deg);
     display:block;
     margin:0 auto;
-    min-width: 0; 
     max-width:80%;
   }
-  .rotate-two { 
+  .pic-dbl-ltlt-top { 
+    border:#fff 8px solid;
+    box-shadow:1px 1px 5px #4e4e4e;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    transform: rotate(2deg);
+    float:left;
+    max-width:50%;
+  }
+  .pic-dbl-rtlt-top { 
     border:#fff 8px solid;
     box-shadow:1px 1px 5px #4e4e4e;
     -webkit-transform: rotate(-2deg);
     -moz-transform: rotate(-2deg);
     transform: rotate(-2deg);
-    flex: 1 1 100%;
-    min-width: 0; 
+float:left;
     max-width:50%;
   }
-  .rotate-three { 
+  .pic-dbl-ltlt-btm { 
     border:#fff 8px solid;
     box-shadow:1px 1px 5px #4e4e4e;
     -webkit-transform: rotate(1deg);
@@ -779,18 +786,18 @@ textarea.message:focus {
     transform: rotate(1deg);
     margin-top:-2rem;
     margin-left:-1rem;
-    min-width: 0; 
-    max-width:50%;
+float:left;
+    max-width:49%;
   }
-  .rotate-four { 
+  .pic-dbl-rtlt-btm { 
     border:#fff 8px solid;
     box-shadow:1px 1px 5px #4e4e4e;
     -webkit-transform: rotate(-2deg);
     -moz-transform: rotate(-2deg);
     transform: rotate(-2deg);
     margin-top:-2rem;
-    min-width: 0; 
-    max-width:50%;
+float:left;
+    max-width:49%;
   }
   main,
   .main {
