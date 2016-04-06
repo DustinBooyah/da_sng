@@ -154,6 +154,8 @@ hr {
 @media (min-width: 768px) {
   .Site-content {
     padding-top: 2rem;
+        background:url(../img/bg-content.png) bottom center no-repeat;
+    background-size:contain;
   }
   .Site-content::after {
     margin-top: 2rem;
@@ -171,12 +173,14 @@ hr {
 .Aligner {
   display: flex;
   align-items: center;
-  min-height: 24em;
+  min-height: 70vh;
   justify-content: center;
 }
 
 .Aligner-item {
-  flex: 1;
+/*  display:flex;*/
+  align-items: center;
+  justify-content: center;
 }
 .Aligner-item--top {
   align-self: flex-start;
@@ -193,8 +197,8 @@ hr {
   margin: 0 auto;
 }
 .Footer {
-  padding: 1.5rem 1.5rem 0 1.5rem ;
-  font-size: 0.8rem;
+  padding: 1.5rem 1.5rem ;
+  font-size: 0.85rem;
 }
 .Footer a:focus,
 .Footer a:active,
@@ -205,7 +209,6 @@ hr {
 .footer ul, 
 .footer li {
   list-style-type:none;
-  font-size:0.8rem;
   font-weight:bold;
 }
 footer .border {
@@ -449,7 +452,7 @@ footer .border {
 }
 @media (--break-lg) {
   .Header-title {
-    font-size: 4em;
+    font-size: 4em;/
   }
 }
 
@@ -764,6 +767,7 @@ input[type=submit]:visited {
   max-height: 100%;
   cursor:pointer;
   border:none;
+  display: inline-block;
   background-color:rgb(243,172,5);
   font-family:"bebas_neueregular";
   font-size:1.4rem;
@@ -802,7 +806,7 @@ button h2 {
 .padding {
   padding:4%;
   }
-  .inline {
+.inline {
   display:inline-block;
 }
 
@@ -897,15 +901,14 @@ textarea.message:focus {
     background-size:cover;
   }
   h1 .commercial-maintenance {
-margin:4rem 0;
+    margin:4rem 0;
 }
 .pavement-marking {
     background:url(../img/header-pavement-marking.png) top center no-repeat;
     background-size:cover;
   }
 .home {
-  background:url(../img/bg-home.jpg) top center no-repeat;
-  background-size:cover;
+background:none;
   }
 
 
@@ -930,22 +933,19 @@ margin:4rem 0;
 @media all and (min-width: 48em) {
   body {
     font-size:100%;
-       background:url(../img/bg-content.png) top center no-repeat;
-    background-size:contain;
-  
   }
   nav  > ul > li > a .hidden-for-large {
     display:none;
   }
-  .Aligner-item--fixed {
+/*  .Aligner-item--fixed {
     flex: none;
     max-width: 100%;
     padding:3%;
-  }
-  .Site-content {
+  }*/
+/*  .Site-content {
     margin-top:0;
     padding:3%;
-    }
+    }*/
   h1{
     font-size: 6rem;
     margin-bottom: -0.5rem;
@@ -978,6 +978,10 @@ margin:4rem 0;
     font-size:2.25rem;
     text-shadow:1px 1px 1px rgba(45,45,45,0.9);
     min-width:300px;
+  }
+.home {
+  background:url(../img/logo-hero.png) center no-repeat;
+  background-size:contain;
   }
 
   .pic-sngl-ltlt-top {

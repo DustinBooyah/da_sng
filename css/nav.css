@@ -8,11 +8,11 @@
     overflow-y: hidden; 
   }
   #menu{
-    min-height: 52px;
+    min-height: 72px;
     }
   #navigator{
-    min-height: 52px;
-    line-height: 52px;
+    min-height: 72px;
+    line-height: 72px;
     }
   #navigator ul{ 
     list-style: none; 
@@ -24,7 +24,7 @@
     }
   #navigator > ul > li > a{
     color: #fefefe;
-    font-size: 1.45rem;
+    font-size: 1.75rem;
     font-family:"bebas_neueregular";
     text-align: center;
     display: block;
@@ -53,7 +53,7 @@
   }
   #menu ul ul li a{
     color: #fefefe;
-    font-size: 1.45rem;
+    font-size: 1.75rem;
     font-family:"bebas_neueregular";
     font-weight:300;
     display: block;
@@ -82,13 +82,13 @@
 @media handheld, screen and (max-width: 48em){
   .menu-opened{ 
     display: block; 
-    min-height: 52px;
-    line-height: 52px;
+    min-height: 72px;
+    line-height: 72px;
     
   }
   .menu-opened span{
     color: #fefefe;
-    font-size: 1.45rem;
+    font-size: 1.75rem;
     font-family:"bebas_neueregular";
     text-align: left;
     position: absolute;
@@ -128,7 +128,7 @@
     background: #453C32;
     transition: 0.3s;
     font-family:"bebas_neueregular";
-    font-size:1.45rem;
+    font-size:1.75rem;
     font-weight:300;
     box-shadow: -4px 0 15px 0px #373435;
     -webkit-box-shadow: -4px 0 15px 0px #373435;
@@ -138,12 +138,12 @@
     left: 0; 
 }
   #navigator .title{
-    font-size: 1.45rem;
+    font-size: 1.75rem;
     font-weight:300;
     font-family:"bebas_neueregular";
     text-shadow: 0.8px 0.8px 3px #111;
-    height: 52px;
-    line-height:52px;
+    height: 72px;
+    line-height:72px;
     display: block;
     border-bottom: 1px solid rgba(0,0,0,0.045);
     background: #26221D url(../img/logo-mobilemenu.png) no-repeat center;
@@ -174,7 +174,7 @@
   }    
   #navigator ul li a{
     color: #ddd;
-    font-size: 1.45rem;
+    font-size: 1.75rem;
     font-weight:300;
     display: block;
     padding: 20px;
@@ -207,7 +207,7 @@
   } 
   #navigator ul li li a{ 
     color: #ddd; 
-    font-size: 1.15rem; 
+    font-size: 1.5rem; 
   }
   #navigator ul li li > .parent,
   #navigator ul li li:hover > .parent{ 
