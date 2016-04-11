@@ -67,9 +67,9 @@ h1{
   font-weight:400;
   -webkit-font-kerning: normal;
   line-height:1;
-  margin:0.5rem auto;
   font-family:"bebas_neueregular";
   text-rendering:optimizeLegibility;
+  text-shadow:1px 1px 1px rgba(45,45,45,0.5);
 }
 h2 {
   color:#231B10;
@@ -153,8 +153,8 @@ hr {
 }
 @media (min-width: 768px) {
   .Site-content {
-    padding-top: 2rem;
-        background:url(../img/bg-content.png) bottom center no-repeat;
+    /*padding-top: 2rem;*/
+    background:url(../img/bg-content.png) bottom center no-repeat;
     background-size:contain;
   }
   .Site-content::after {
@@ -199,6 +199,8 @@ hr {
 .Footer {
   padding: 1.5rem 1.5rem ;
   font-size: 0.85rem;
+  background:url(../img/logo-footer.png) bottom left no-repeat;
+  background-size: contain;
 }
 .Footer a:focus,
 .Footer a:active,
@@ -421,8 +423,8 @@ footer .border {
 }
 .Header {
   padding: 1.5em;
-  background-color: rgba(147, 128, 108, 0.1);
-  text-align: center;
+  background: rgba(147, 128, 108, 0.1);
+  text-align: left;
 }
 @media (--break-lg) {
   .Header {
@@ -714,9 +716,7 @@ footer .border {
 .text-orange a:hover {
   color:#ED7D29;
 }
-.header-orange {
-  color:rgb(255, 187, 88);
-}
+
 .text-white {
   color:#fefefe;
 }
@@ -729,6 +729,17 @@ footer .border {
 }
 .text-grey_dk {
   color:#666;
+}
+.header-section {
+  color:rgb(255, 187, 88);
+  font-size: 2.5rem;
+  margin-bottom:-2.5rem;
+  font-weight:400;
+  -webkit-font-kerning: normal;
+  line-height:1;
+  margin:0.5rem auto;
+  font-family:"bebas_neueregular";
+  text-rendering:optimizeLegibility;
 }
 
 /* NAVIGATION
@@ -900,9 +911,7 @@ textarea.message:focus {
     background:url(../img/header-commercial-maintenance.png) top center no-repeat;
     background-size:cover;
   }
-  h1 .commercial-maintenance {
-    margin:4rem 0;
-}
+ 
 .pavement-marking {
     background:url(../img/header-pavement-marking.png) top center no-repeat;
     background-size:cover;
@@ -947,10 +956,9 @@ background:none;
     padding:3%;
     }*/
   h1{
-    font-size: 6rem;
-    margin-bottom: -0.5rem;
+    font-size: 5rem;
     letter-spacing:-1pt;
-    text-shadow:none;
+    text-shadow:1px 1px 1px rgba(45,45,45,0.5);
   }
   h2 {
     font-size: 3.5rem;
@@ -983,7 +991,18 @@ background:none;
   background:url(../img/logo-hero.png) center no-repeat;
   background-size:contain;
   }
-
+.Header {
+  background: rgba(147, 128, 108, 0.1) url(../img/bg-header.png) top right no-repeat;
+  background-size:contain;
+  text-align: left;
+}
+  .header-section{
+    color:rgba(255, 187, 88, 0.8);
+    font-size: 6rem;
+    margin-bottom: -2.5rem;
+    letter-spacing:-1pt;
+    text-shadow:none;
+  }
   .pic-sngl-ltlt-top {
     border:#fff 0.5rem solid;
     box-shadow:1px 1px 5px #4e4e4e;
