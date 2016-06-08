@@ -82,7 +82,6 @@ h2 {
   text-shadow:1px 1px 1px rgba(45,45,45,0.5);
 }
 h3 {
-  color:#231B10;
   font-size:1.75rem;
   font-weight:400;
   color:#444;
@@ -93,7 +92,6 @@ h3 {
   
 }
 h4 {
-  color:#231B10;
   font-size:1.5rem;
   font-weight:300;
   color:#444;
@@ -103,7 +101,6 @@ h4 {
   text-rendering:optimizeLegibility;
 }
 h5 {
-  color:#231B10;
   font-size:1.25rem;
   font-weight:300;
   color:#444;
@@ -113,7 +110,6 @@ h5 {
   text-rendering:optimizeLegibility;
 }
 h6 {
-  color:#231B10;
   font-size:1rem;
   font-weight:300;
   color:#444;
@@ -746,7 +742,7 @@ footer .border {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav {
   background: #26221D;
-  border-bottom:solid 2px #DE7324;
+  /*border-bottom:solid 2px #DE7324;*/
   width:100%;
   display:block;
 }

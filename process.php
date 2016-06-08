@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
     $telephone = $_POST['telephone'];
     $subject = "Message from the SnG Website";
     $subject2 = "Copy of message to SnG Gainesville";
-    $message = $first_name . " " . $last_name . " sent the following via the SnG website's contact form:" . "\n\n" . $_POST['message'];
+    $message = "Sender:" . " " . $first_name . " " . $last_name . "\n\n" . "Phone:" . " " . $_POST['telephone'] . "\n\n" . "Email:" . " " . $_POST['email'] . "\n\n" . $_POST['message'];
     $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;

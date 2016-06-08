@@ -99,7 +99,7 @@
     margin: 0 auto;
     display: block;
     cursor: pointer;
-    background: #26221D url(../img/logo-mobilemenu2.png) no-repeat center;
+    background: #26221D url(../img/logo-mobilemenu2.svg) no-repeat right;
     box-shadow: 0 7px 3px -7px #373435;
     -webkit-box-shadow: 0 7px 3px -7px #373435;
     -moz-box-shadow: 0 7px 3px -7px #373435;
@@ -145,7 +145,7 @@
     height: 72px;
     line-height:72px;
     display: block;
-    border-bottom: 1px solid rgba(0,0,0,0.045);
+    /*border-bottom: 1px solid rgba(0,0,0,0.045);*/
     background: #26221D url(../img/logo-mobilemenu.png) no-repeat center;
 /*    box-shadow: -4px 0 5px 0px #373435;
     -webkit-box-shadow: -4px 0 5px 0px #373435;
