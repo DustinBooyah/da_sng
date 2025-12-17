@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
   <title>SnG Commercial Maintenance and Pavement Marking | Gainesville, FL</title>
   <meta content="SnG Commercial Maintenance and Pavement Marking" name="description">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
@@ -27,15 +27,15 @@
   <nav class="Site-header">
     <div id="menu">
       <div class="menu-opened">
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;MENU</span>
+        <span>MENU</span>
       </div>
        
       <div class="menu-open">
         <div id="navigator">
 
            <ul class="nav">
-            <a class="title text-orange" href="#" >&nbsp;&nbsp;&#10094;&nbsp;&nbsp;Back</a>
-            <li class="title-logo left"><a href="index.html"><img src="img/logo-menu.png"></a></li>
+            <li class="title"><a class="text-orange" href="#">&#10094; Back</a></li>
+            <li class="title-logo left"><a href="index.html"><img src="img/logo-menu.webp" alt="SnG Home"></a></li>
 
             <li class="hidden-for-large"><a href="index.html" title="SnG Pavement Marking and Commercial Maintenance">Home</a></li>
 

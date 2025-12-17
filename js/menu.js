@@ -28,8 +28,10 @@ jQuery(document).ready(function($){
         jQuery(document).on("click", function() {
           allMenus.removeClass("open");
         });
-        $("a.title").on("click", function() {
+        $("li.title a, a.title").on("click", function(e) {
+          e.preventDefault();
           allMenus.removeClass("open");
+          $("body").removeClass('no_scroll');
         });
         thisPanel.on("click", function(e) {
           e.stopPropagation();

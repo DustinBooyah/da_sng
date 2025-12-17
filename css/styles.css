@@ -42,7 +42,7 @@ p {
   letter-spacing:-0.02rem;
 }
 footer{
-  background-image:url(../img/bg-footer.jpg);
+  background-image:url(../img/bg-footer.webp);
   color:#888;
   width:100%;
 }
@@ -150,7 +150,7 @@ hr {
 @media (min-width: 768px) {
   .Site-content {
     /*padding-top: 2rem;*/
-    background:url(../img/bg-content.png) bottom center no-repeat;
+    background:url(../img/bg-content.webp) bottom center no-repeat;
     background-size:contain;
   }
   .Site-content::after {
@@ -195,7 +195,7 @@ hr {
 .Footer {
   padding: 1.5rem 1.5rem ;
   font-size: 0.85rem;
-  background:url(../img/logo-footer.png) bottom left no-repeat;
+  background:url(../img/logo-footer.webp) bottom left no-repeat;
   background-size: contain;
 }
 .Footer a:focus,
@@ -450,7 +450,7 @@ footer .border {
 }
 @media (--break-lg) {
   .Header-title {
-    font-size: 4em;/
+    font-size: 4em;
   }
 }
 
@@ -616,7 +616,7 @@ footer .border {
   }
 }
 
-@media (min-width: 768px) {`
+@media (min-width: 768px) {
   .u-large-full {
     width: 100% !important;
     flex: none !important;
@@ -705,6 +705,7 @@ footer .border {
 /* TEXT COLORS 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .text-orange,
+.text-orange li,
 .text-orange a,
 .text-orange a:visited {
   color:#DE7324;
@@ -732,6 +733,8 @@ footer .border {
   margin-bottom:-2.5rem;
   font-weight:400;
   -webkit-font-kerning: normal;
+  font-kerning:normal;
+  kerning:normal;
   line-height:1;
   margin:0.5rem auto;
   font-family:"bebas_neueregular";
@@ -799,16 +802,30 @@ button h2 {
 }
 
 .cta-bg-cm {
-   background:rgb(243,172,5) url(../img/bg-cta-cm.png) top center no-repeat;
+   background:rgb(243,172,5) url(../img/bg-cta-cm.webp) top center no-repeat;
     background-size:cover;
     margin:1rem;
-    padding-top:4rem;
+    padding:4rem;
+  cursor:pointer;
+  border:none;
+  display: inline-block;
+}
+.cta-bg-cm:hover {
+  background-color:rgb(255,204,51);
+
 }
 .cta-bg-pm {
-   background:rgb(243,172,5) url(../img/bg-cta-pm.png) top center no-repeat;
+   background:rgb(243,172,5) url(../img/bg-cta-pm.webp) top center no-repeat;
     background-size:cover;
     margin:1rem;
-    padding-top:4rem;
+    padding:4rem;
+  cursor:pointer;
+  border:none;
+  display: inline-block;
+}
+.cta-bg-pm:hover {
+    background-color:rgb(255,204,51);
+
 }
 .padding {
   padding:4%;
@@ -857,7 +874,6 @@ textarea:focus:invalid{
     border: 1px solid #b03535
 }*/
 
-
 input:required:valid,
 textarea:required:valid { /* when a field is considered valid by the browser */
     border: 1px solid #5cd053;
@@ -904,12 +920,12 @@ textarea.message:focus {
   }
 
 .commercial-maintenance {
-    background:url(../img/header-commercial-maintenance.png) top center no-repeat;
+    background:url(../img/header-commercial-maintenance.webp) top center no-repeat;
     background-size:cover;
   }
  
 .pavement-marking {
-    background:url(../img/header-pavement-marking.png) top center no-repeat;
+    background:url(../img/header-pavement-marking.webp) top center no-repeat;
     background-size:cover;
   }
 .home {
@@ -984,11 +1000,11 @@ background:none;
     min-width:300px;
   }
 .home {
-  background:url(../img/logo-hero.png) center no-repeat;
+  background:url(../img/logo-hero.webp) center no-repeat;
   background-size:contain;
   }
 .Header {
-  background: rgba(147, 128, 108, 0.1) url(../img/bg-header.png) top right no-repeat;
+  background: rgba(147, 128, 108, 0.1) url(../img/bg-header.webp) top right no-repeat;
   background-size:contain;
   text-align: left;
 }
@@ -1050,11 +1066,6 @@ background:none;
     max-width:48%;
   }
 
-/*  main,
-  .main {
-    background:url(../img/bg-content.png) top center no-repeat;
-    background-size:contain;
-  }*/
   .text-right {
     text-align:right;
   }

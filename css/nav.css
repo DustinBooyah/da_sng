@@ -103,6 +103,7 @@
     box-shadow: 0 7px 3px -7px #373435;
     -webkit-box-shadow: 0 7px 3px -7px #373435;
     -moz-box-shadow: 0 7px 3px -7px #373435;
+    padding-left: 20px;
     }
   .open > .menu-opened{ 
     position: fixed; 
@@ -138,18 +139,22 @@
     left: 0; 
 }
   #navigator .title{
-    font-size: 1.75rem;
+    /* font-size: 1.75rem;
     font-weight:300;
-    font-family:"bebas_neueregular";
+    font-family:"bebas_neueregular"; */
     text-shadow: 0.8px 0.8px 3px #111;
-    height: 72px;
+    /* height: 72px;
     line-height:72px;
-    display: block;
+    display: block; */
     /*border-bottom: 1px solid rgba(0,0,0,0.045);*/
-    background: #26221D url(../img/logo-mobilemenu.png) no-repeat center;
+    background: #26221D url(../img/logo-mobilemenu.webp) no-repeat center;
 /*    box-shadow: -4px 0 5px 0px #373435;
     -webkit-box-shadow: -4px 0 5px 0px #373435;
     -moz-box-shadow: -4px 0 5px 0px #373435;*/
+  }
+  #navigator .title a{
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   #navigator .title-logo {
