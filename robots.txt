@@ -1,0 +1,6 @@
+# robots.txt for sngpavementmarking.com
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://sngpavementmarking.com/sitemap.xml

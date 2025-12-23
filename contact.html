@@ -125,24 +125,31 @@
         <div class="Grid-cell u-large-1of2">
 
           <h2>Send an Email</h2>
-          <form method="post" action="process.php">
+          <form method="post" action="https://formsubmit.co/sngpavement1@aol.com">
+            <!-- Formsubmit.co configuration -->
+            <input type="hidden" name="_subject" value="New message from SnG Website">
+            <input type="hidden" name="_next" value="https://sngpavement.com/thankyou.html">
+            <input type="hidden" name="_captcha" value="true">
+
+            <!-- Honeypot field for spam protection -->
+            <input type="text" name="_honey" style="display:none">
 
             <label for="first_name">First Name</label>
-            <input id="first_name" class="first_name" type="text" name="first_name" placeholder="First Name" required>
+            <input id="first_name" class="first_name" type="text" name="first_name" placeholder="First Name" required maxlength="50">
 
             <label for="last_name">Last Name</label>
-            <input id="last_name" class="last_name" type="text" name="last_name" placeholder="Last Name" required>
+            <input id="last_name" class="last_name" type="text" name="last_name" placeholder="Last Name" required maxlength="50">
 
             <label for="email">Email</label>
-            <input id="email" class="email" type="email" name="email" placeholder="name@company.com" required>
+            <input id="email" class="email" type="email" name="email" placeholder="name@company.com" required maxlength="254">
 
             <label for="telephone">Phone</label>
             <input id="telephone" class="telephone" type="tel" name="telephone"
-              title="enter a telephone number in the format xxx-xxx-xxxx" required>
+              title="enter a telephone number in the format xxx-xxx-xxxx" required maxlength="20">
 
             <label for="message">Message</label>
             <textarea id="message" class="message" name="message" cols="25" rows="6" placeholder="What's on your mind?"
-              required></textarea>
+              required maxlength="5000"></textarea>
 
             <input type="submit" value="Submit" name="submit" class="button cta">
           </form>
